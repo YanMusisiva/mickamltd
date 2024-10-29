@@ -25,10 +25,9 @@ La totalité des images  sont dans le répertoire `public`.
 ## Expérience
 
 J'ai beaucoup apprécié ce concours. N'ayant pas eu le temps pour faire un multipage, je me suis concentré sur une seule page, avec un menu de navigation accessible via un bouton situé en haut à droite de la page.
-Peut-être pousserai-je le projet un peu plus loin ensuite, pour en faire une base de landing page ^^ avec la gestion du blog etc.
 
 Vous pouvez visiter le site ici : [Écoville](https://ecoville-liart.vercel.app/)
 
 Bonne visite à tous ! 👋
 
-P.S. : Je n'ai pas forcément été très rigoureux sur le nommage des commits 🙃
+
