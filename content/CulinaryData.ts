@@ -1,51 +1,58 @@
 import { EcovilleCulinaryData } from "./types/contentType";
 
 export const ecovilleCulinaryData: EcovilleCulinaryData = {
-  title: "Savourez Écoville",
+  title: "Discover Mickam Projects in Videos",
   content:
-    "Découvrez une expérience culinaire unique où l'innovation écologique rencontre la gastronomie. Nos restaurants allient saveurs locales, agriculture urbaine et technologies durables pour créer des plats aussi délicieux que respectueux de l'environnement.",
+    "Explore the projects and services of Mickam (U) Ltd through short videos, showcasing our expertise in construction, civil engineering, and sustainable building solutions across Uganda and East Africa.",
   highlightedRestaurant: {
-    title: "L'Éco-Lab Culinaire",
+    title: "Featured Project: Residential Estates",
     description:
-      "Centre d'innovation gastronomique où les chefs expérimentent de nouvelles techniques de cuisine durable et invitent les visiteurs à participer à des ateliers culinaires éco-responsables.",
-    image: "/blog_cuisine/labo.webp",
+      "Our flagship residential estates demonstrate Mickam’s commitment to quality, safety, and sustainable construction, combining modern design with efficient project management.",
+    image: "/thumbnails/residential-estates.webp", // thumbnail image
+    video: "/videos/residential-estates.mp4", // video file
   },
   articles: [
     {
-      title: "Les Délices de la Permaculture Urbaine",
+      title: "Commercial & Office Buildings",
       description:
-        "Découvrez comment nos chefs transforment les récoltes de nos jardins urbains en mets raffinés et durables.",
-      image: "/blog_cuisine/perma.webp",
+        "High-quality office spaces, retail, and hospitality projects delivered with attention to detail, safety, and on-time completion.",
+      image: "/thumbnails/commercial-buildings.webp",
+      video: "/videos/commercial-buildings.mp4",
     },
     {
-      title: "La Révolution des Protéines Alternatives",
+      title: "Civil & Infrastructure Works",
       description:
-        "Explorez le futur de l'alimentation à travers nos innovations en matière de viandes végétales et d'insectes comestibles.",
-      image: "/blog_cuisine/insect.webp",
+        "Roads, drainage, pavements, and minor bridges executed with durability and precision, meeting international standards.",
+      image: "/thumbnails/civil-infrastructure.webp",
+      video: "/videos/civil-infrastructure.mp4",
     },
     {
-      title: "Du Compost à l'Assiette",
+      title: "Turnkey EPC Projects",
       description:
-        "Apprenez comment Écoville a créé un système alimentaire en circuit fermé, où chaque déchet devient une ressource.",
-      image: "/blog_cuisine/compost.webp",
+        "End-to-end Design-Build projects covering engineering, procurement, and construction under a single contract.",
+      image: "/thumbnails/epc-projects.webp",
+      video: "/videos/epc-projects.mp4",
     },
     {
-      title: "Le Jardin Suspendu",
+      title: "Structural & Architectural Support",
       description:
-        "Restaurant panoramique situé au sommet de la Tour Hexagonale, offrant une cuisine basée sur les produits cultivés dans ses propres jardins verticaux.",
-      image: "/blog_cuisine/suspendu.webp",
+        "Providing structural detailing, MEP coordination, renovations, and adaptive reuse solutions for complex construction projects.",
+      image: "/thumbnails/structural-support.webp",
+      video: "/videos/structural-support.mp4",
     },
     {
-      title: "L'Alvéole Gourmande",
+      title: "Project & Cost Management",
       description:
-        "Bistro local utilisant exclusivement des ingrédients provenant des ruches et potagers urbains d'Écoville.",
-      image: "/blog_cuisine/gourmande.webp",
+        "Comprehensive project planning, scheduling, cost control, and quality assurance to ensure successful delivery.",
+      image: "/thumbnails/project-management.webp",
+      video: "/videos/project-management.mp4",
     },
     {
-      title: "Fusion Hexagonale",
+      title: "Regional Projects Across East Africa",
       description:
-        "Restaurant futuriste proposant des plats imprimés en 3D à partir d'algues et de protéines végétales cultivées localement.",
-      image: "/blog_cuisine/fusion.webp",
+        "Delivering projects in Uganda, Kenya, Tanzania, Rwanda, South Sudan, and the DRC, leveraging local expertise and regional experience.",
+      image: "/thumbnails/regional-projects.webp",
+      video: "/videos/regional-projects.mp4",
     },
   ],
 };

@@ -1,24 +1,27 @@
 import { EcovilleHistoryData } from "./types/contentType";
 
 export const historyData: EcovilleHistoryData = {
-  title: "De la Vision à la Réalité",
+  title: "From Vision to Reality",
   content:
-    "Née de l'**imagination visionnaire** d'un groupe d'urbanistes, d'écologistes et de futuristes en 2030, Écoville a pris vie sur les vestiges d'une ancienne zone industrielle. En seulement une décennie, ce qui n'était qu'un rêve ambitieux s'est transformé en une **réalité florissante**, démontrant qu'un avenir durable n'est pas seulement possible, mais déjà en marche.",
+    "Founded in 2019, Mickam (U) Ltd began as a small Ugandan construction and engineering company with a clear vision: to deliver high-quality, safe, and sustainable building solutions across Uganda and East Africa. Over the years, Mickam has grown into a trusted regional partner, executing complex projects on time, on budget, and to specification, demonstrating that disciplined project management and a client-first approach lead to real impact and success.",
   beforeImg: "/history/before.webp",
   afterImg: "/history/after.webp",
   keyPoints: [
-    { title: "Date de fondation", description: "2030" },
+    { title: "Founded", description: "2019" },
     {
-      title: "Inspiration",
-      description: "Biomimétisme et structure des ruches d'abeilles",
+      title: "Mission",
+      description:
+        "To plan, build, and maintain durable infrastructure and buildings using best-practice engineering and strong safety standards",
     },
     {
-      title: "Objectif initial",
-      description: "Créer un modèle de ville durable et réplicable",
+      title: "Vision",
+      description:
+        "To be East Africa’s most trusted partner for quality, safe, and sustainable construction",
     },
     {
-      title: "Développement",
-      description: "Transformation rapide d'une zone industrielle en éco-cité",
+      title: "Growth",
+      description:
+        "Expanded from local projects in Uganda to delivering civil and building works across East Africa with a skilled, reliable team",
     },
   ],
 };

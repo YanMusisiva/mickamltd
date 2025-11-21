@@ -43,66 +43,60 @@ body {
   }
   body {
     @apply bg-background text-foreground;
-   
   }
 }
-
 
 .perspective {
   perspective: 1000px;
 }
 
-.text-shadow{
-  text-shadow: 
-      0 -1px 1px #35e612, 
-      0 -2px 0 #bfe4b8, 
-      0 15px 10px #1212124b, 
-      0 0px 50px rgba(0, 0, 0, 0.575);
+.text-shadow {
+  text-shadow: 0 -1px 1px #35e612, 0 -2px 0 #bfe4b8, 0 15px 10px #1212124b,
+    0 0px 50px rgba(0, 0, 0, 0.575);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--font-paytone-one);
 }
 
-strong{
+strong {
   font-weight: 600;
   opacity: 0.85;
 }
 
-.parralelogram{
-  clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0 100%)
+.parralelogram {
+  clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0 100%);
 }
 
-@media  (max-width: 768px) {
-  .parralelogram{
-    clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 100%)
+@media (max-width: 768px) {
+  .parralelogram {
+    clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 100%);
   }
-  
 }
 
-.hexa{
+.hexa {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 body::-webkit-scrollbar {
   width: 5px;
-  background: rgba(11, 131, 11, 0.582);
+  background: black;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: rgb(255, 255, 255);
+  background: white;
 }
 
 .scrollbar_cuisine::-webkit-scrollbar {
   /* width: 0px; */
   height: 10px;
-  background: rgba(11, 131, 11, 0.212);
+  background: rgba(245, 242, 82, 0.212);
   border-radius: 10px;
 }
 
 .scrollbar_cuisine::-webkit-scrollbar-thumb {
-  background: rgba(224, 6, 6, 0.288);
-  
+  background: rgba(233, 7, 7, 0.288);
+
   border-radius: 10px;
-  
 }

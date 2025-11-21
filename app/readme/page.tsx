@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Écoville - README",
+  title: "Mickam (U) Ltd – Company Profile",
   description:
-    "Page README du projet Écoville, la ville écologique qu'il faut vivre",
+    "Company profile of Mickam (U) Ltd, construction & engineering solutions across Uganda and East Africa.",
 };
 
 export default function ReadmePage() {
@@ -12,166 +12,170 @@ export default function ReadmePage() {
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
         <div className="px-6 py-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-6">EcoVille</h1>
+          {/* TITLE */}
+          <h1 className="text-4xl font-bold text-gray-900 mb-6">
+            Mickam (U) Ltd – Company Profile
+          </h1>
 
-          <p className="text-gray-700 mb-4">
-            Site web d&apos;Écoville imaginé pour le{" "}
-            <Link
-              href="https://youtu.be/LxfRrcanK2A?si=QOks2GAOcnywLSXZ"
-              className="text-blue-600 hover:underline"
-            >
-              concours
-            </Link>{" "}
-            de l&apos;
-            <Link
-              href="https://www.ecole-du-web.net/"
-              className="text-blue-600 hover:underline"
-            >
-              École du web
-            </Link>
-            .
+          {/* INTRO */}
+          <p className="text-gray-700 mb-6">
+            Mickam (U) Ltd is a Ugandan construction and engineering company
+            incorporated in 2019. We deliver end-to-end building and civil works
+            solutions for private developers, corporates, and public sector
+            clients across Uganda and the wider East African region.
           </p>
 
           <p className="text-gray-700 mb-6">
-            Écoville est une ville imaginaire qui s&apos;inspire de la forme
-            hexagonale et de ses caractéristiques environnementales. Elle est
-            conçue pour minimiser son impact environnemental tout en favorisant
-            une vie communautaire active et ouverte.
+            Our approach blends rigorous project management, strong HSE
+            practices, and a collaborative, client-first culture to consistently
+            deliver on time, on budget, and to specification.
           </p>
 
+          {/* VISION */}
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Outils de développement
+            Vision
+          </h2>
+          <p className="text-gray-700 mb-6">
+            To be East Africa&apos;s most trusted partner for quality, safe, and
+            sustainable construction that uplifts communities and advances
+            regional development.
+          </p>
+
+          {/* MISSION */}
+          <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            Mission
           </h2>
 
+          <p className="text-gray-700 mb-4">
+            To plan, build, and maintain durable infrastructure and buildings
+            by:
+          </p>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
             <li>
-              Framework{" "}
-              <Link
-                href="https://nextjs.org/"
-                className="text-blue-600 hover:underline"
-              >
-                Next.js
-              </Link>{" "}
-              (App Router)
+              Applying best-practice engineering and uncompromising safety
+              standards,
+            </li>
+            <li>Using skilled local teams and reliable supply chains,</li>
+            <li>
+              Embracing innovation and value engineering to reduce lifecycle
+              costs,
             </li>
             <li>
-              <Link
-                href="https://tailwindcss.com/"
-                className="text-blue-600 hover:underline"
-              >
-                Tailwind CSS
-              </Link>{" "}
-              pour le CSS et ses classes utilitaires
-            </li>
-            <li>
-              Librairie{" "}
-              <Link
-                href="https://www.gsap.com"
-                className="text-blue-600 hover:underline"
-              >
-                GSAP
-              </Link>{" "}
-              pour les animations et ses super plugins
-            </li>
-            <li>
-              <Link
-                href="https://lenis.darkroom.engineering/"
-                className="text-blue-600 hover:underline"
-              >
-                Lenis.js
-              </Link>{" "}
-              pour améliorer l&apos;expérience des animations au scroll
-            </li>
-            <li>
-              <Link
-                href="https://ui.shadcn.com/"
-                className="text-blue-600 hover:underline"
-              >
-                shadcn
-              </Link>{" "}
-              installé mais non utilisé
-            </li>
-            <li>
-              <Link
-                href="https://react-compare-slider.vercel.app/?path=/docs/docs-introduction--docs"
-                className="text-blue-600 hover:underline"
-              >
-                React Compare Slider
-              </Link>{" "}
-              pour la comparaison avant/après
-            </li>
-            <li>
-              Polices utilisées :{" "}
-              <Link
-                href="https://fonts.google.com/specimen/Paytone+One"
-                className="text-blue-600 hover:underline"
-              >
-                Paytone One
-              </Link>{" "}
-              et{" "}
-              <Link
-                href="https://fonts.google.com/specimen/Athiti"
-                className="text-blue-600 hover:underline"
-              >
-                Athiti
-              </Link>
-            </li>
-            <li>
-              Icônes de{" "}
-              <Link
-                href="https://lucide.dev/"
-                className="text-blue-600 hover:underline"
-              >
-                Lucide
-              </Link>{" "}
-              et{" "}
-              <Link
-                href="https://www.radix-ui.com/docs/primitives/icons/overview"
-                className="text-blue-600 hover:underline"
-              >
-                Radix UI
-              </Link>
-            </li>
-            <li>
-              Images générées par{" "}
-              <Link
-                href="https://www.midjourney.com/home"
-                className="text-blue-600 hover:underline"
-              >
-                Midjourney
-              </Link>
+              Communicating transparently so clients always know scope, cost,
+              and timeline.
             </li>
           </ul>
 
-          <p className="text-gray-700 mb-6">
-            La quasi-totalité du contenu textuel est dans le dossier{" "}
-            <code className="bg-gray-200 px-1 py-0.5 rounded">content</code>.
-          </p>
-          <p className="text-gray-700 mb-6">
-            Toutes les images (webp et svg) sont dans le dossier{" "}
-            <code className="bg-gray-200 px-1 py-0.5 rounded">public</code>.
-          </p>
-
+          {/* CORE VALUES */}
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Expérience
+            Core Values
+          </h2>
+          <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Safety first – zero-harm culture on every site.</li>
+            <li>
+              Integrity – transparency, accountability, and ethical procurement.
+            </li>
+            <li>
+              Quality – workmanship, materials, and finishes that meet or exceed
+              standards.
+            </li>
+            <li>Reliability – disciplined schedules and cost control.</li>
+            <li>Innovation – practical technology and value engineering.</li>
+            <li>
+              Sustainability – environmental stewardship and community impact.
+            </li>
+            <li>
+              Client focus – collaborative delivery and clear communication.
+            </li>
+          </ul>
+
+          {/* SERVICES */}
+          <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            Services
           </h2>
 
-          <p className="text-gray-700 mb-4">
-            J&apos;ai beaucoup apprécié ce concours. N&apos;ayant pas eu le
-            temps pour faire un multipage, je me suis concentré sur une seule
-            page, avec un menu de navigation accessible via un bouton situé en
-            haut à droite de la page.
-          </p>
+          {/* BUILDING CONSTRUCTION */}
+          <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
+            Building Construction
+          </h3>
+          <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <li>Residential estates, villas, and apartments</li>
+            <li>Commercial buildings, offices, retail, and hospitality</li>
+            <li>Industrial facilities, warehouses, and workshops</li>
+            <li>Turnkey Design–Build (EPC) delivery</li>
+          </ul>
 
-          <p className="text-gray-700 mb-6">
-            Peut-être pousserai-je le projet un peu plus loin ensuite, pour en
-            faire une base de landing page ^^ avec la gestion du blog etc.
-          </p>
+          {/* CIVIL & INFRASTRUCTURE */}
+          <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
+            Civil & Infrastructure
+          </h3>
+          <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <li>Roads, access ways, parking & pavements</li>
+            <li>Drainage, culverts, and storm-water management</li>
+            <li>Retaining structures and earthworks</li>
+            <li>Minor bridges and culvert crossings</li>
+          </ul>
 
-          <p className="text-gray-600 italic mt-8">
-            P.S. : Je n&apos;ai pas forcément été très rigoureux sur le nommage
-            des commits 🙃
-          </p>
+          {/* PROJECT MANAGEMENT */}
+          <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
+            Project & Cost Management
+          </h3>
+          <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <li>Project planning, scheduling, and site supervision</li>
+            <li>Quantity surveying, BOQs, and cost control</li>
+            <li>Contract administration (FIDIC/JB) and claims support</li>
+            <li>QA/QC and HSE management</li>
+          </ul>
+
+          {/* STRUCTURAL */}
+          <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
+            Structural & Architectural Support
+          </h3>
+          <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <li>Structural detailing and buildability reviews</li>
+            <li>Coordination of MEP trades during construction</li>
+            <li>Renovations, fit-outs, and adaptive reuse</li>
+            <li>Post-construction maintenance & facilities support</li>
+          </ul>
+
+          {/* PROCUREMENT */}
+          <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
+            Procurement & Enabling Services
+          </h3>
+          <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Materials sourcing and logistics</li>
+            <li>Equipment hire and site mobilization</li>
+            <li>Survey & geotechnical coordination through vetted partners</li>
+            <li>Regulatory approvals liaison and inspections support</li>
+          </ul>
+
+          {/* COVERAGE */}
+          <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            Geographic Coverage
+          </h2>
+          <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Primary base: Uganda</li>
+            <li>
+              Regional operations: Kenya, Tanzania, Rwanda, South Sudan, DRC —
+              with flexible mobilization to meet client needs.
+            </li>
+          </ul>
+
+          {/* WHY CHOOSE US */}
+          <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            Why Clients Choose Mickam
+          </h2>
+          <ul className="list-disc list-inside text-gray-700 mb-10 space-y-2">
+            <li>
+              Proven delivery since 2019 with disciplined timelines and budgets
+            </li>
+            <li>Strong safety culture and compliant workmanship</li>
+            <li>
+              Value engineering to optimize cost without compromising quality
+            </li>
+            <li>Local knowledge, regional reach, and community engagement</li>
+            <li>Clear reporting and a single point of accountability</li>
+          </ul>
         </div>
       </div>
     </div>

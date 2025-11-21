@@ -6,7 +6,7 @@ export const Governance = () => {
   const { title, content, features } = governanceData;
 
   return (
-    <section className="py-20 min-h-svh">
+    <section className="py-4 min-h-svh">
       <div className="flex max-lg:flex-col container max-w-7xl justify-center items-center h-full mb-10">
         <h3 className="text-fluid-2xl lg:text-fluid-3xl tracking-wider container leading-none font-bold max-">
           {title}

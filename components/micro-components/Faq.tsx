@@ -106,7 +106,9 @@ const FAQ: React.FC<FAQProps> = ({ items }) => {
         />
       </svg>
 
-      <h2 className="text-fluid-3xl font-bold mb-6">Foire aux questions</h2>
+      <h2 className="text-fluid-3xl font-bold mb-6">
+        Frequently Asked Questions
+      </h2>
       {items.map((item, index) => (
         <FAQItem
           key={index}

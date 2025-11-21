@@ -1,79 +1,65 @@
 import { EcovilleProjectData } from "./types/contentType";
 
 export const ecovilleProjectData = {
-  title: "Harmonie Hexagonale",
-  subtitle: "La Cité du Futur, Inspirée par la Nature",
+  title: "How Mickam Works",
+  subtitle: "Building Quality, Safety, and Trust Across East Africa",
 
   whyEcoville: {
-    title: "Pourquoi Écoville ?",
+    title: "Why Mickam?",
     content:
-      "Dans un monde en quête d'équilibre, Écoville émerge comme une **solution visionnaire**. Inspirée par la structure parfaite des ruches d'abeilles, notre ville adopte la forme hexagonale pour créer un environnement urbain en **parfaite symbiose avec la nature**.",
+      "Since 2019, Mickam (U) Ltd has delivered reliable engineering and construction solutions across Uganda and East Africa. Our approach combines best-practice engineering, strong safety culture, transparent communication, and disciplined project management to ensure every project is delivered on time, on budget, and to specification.",
   },
 
   features: [
     {
-      title: "Efficacité Énergétique",
+      title: "Building Construction",
       description:
-        "Grâce à sa structure hexagonale, Écoville maximise l'utilisation de l'espace et l'efficacité énergétique, réduisant significativement notre empreinte carbone.",
-      image: "/project/eff.webp",
+        "We deliver residential estates, villas, apartments, commercial buildings, offices, hospitality spaces, and industrial facilities with high-quality workmanship and durable finishes.",
+      image: "/project/building.webp",
     },
     {
-      title: "Biodiversité Intégrée",
+      title: "Civil & Infrastructure Works",
       description:
-        "Chaque cellule hexagonale abrite des espaces verts, favorisant la biodiversité au cœur même de la vie urbaine.",
-      image: "/project/diversite.webp",
+        "Our civil engineering services include roads, pavements, drainage systems, culverts, retaining walls, earthworks, and minor bridges designed for long-term resilience.",
+      image: "/project/infrastructure.webp",
     },
     {
-      title: "Mobilité Durable",
+      title: "Project & Cost Management",
       description:
-        "Un réseau de transport innovant, calqué sur les voies de communication des abeilles, privilégie les déplacements doux et les transports en commun écologiques.",
-      image: "/project/transport.webp",
+        "We provide planning, scheduling, site supervision, quantity surveying, BOQs, cost control, contract administration, and full QA/QC and HSE oversight throughout the project lifecycle.",
+      image: "/project/management.webp",
     },
     {
-      title: "Économie Circulaire",
+      title: "Procurement & Enabling Services",
       description:
-        "À l'image d'une ruche, Écoville fonctionne sur un modèle d'économie circulaire, où chaque ressource est optimisée et réutilisée.",
-      image: "/project/circu.webp",
+        "From materials sourcing and logistics to equipment hire, survey coordination, and regulatory approvals, we provide reliable enabling services to streamline project delivery.",
+      image: "/project/procurement.webp",
     },
   ],
 
   whyJoin: {
-    title: "Pourquoi venir à Écoville ?",
+    title: "Why Work With Mickam?",
     reasons: [
       {
-        title: "Vivre en Harmonie",
+        title: "Trusted Delivery",
         description:
-          "Expérimentez une vie en parfait équilibre entre confort moderne et respect de l'environnement.",
-        image: "/project/harmony.webp",
+          "Since 2019, we've completed projects with disciplined timelines, reliable budgeting, and a strong reputation for meeting client expectations.",
+        image: "/project/trusted.webp",
       },
       {
-        title: "Innover",
+        title: "Safety & Quality First",
         description:
-          "Rejoignez une communauté de pionniers, façonnant ensemble les solutions urbaines de demain.",
-        image: "/project/innov.webp",
+          "Our zero-harm safety culture, strict QA/QC processes, and certified materials ensure durable, compliant, and high-quality construction.",
+        image: "/project/quality.webp",
       },
       {
-        title: "S'épanouir",
+        title: "Transparent Communication",
         description:
-          "Profitez d'un cadre de vie conçu pour le bien-être, alliant nature, technologie et lien social.",
-        image: "/project/epanoui.webp",
+          "Clients enjoy clear reporting, consistent updates, open communication, and a single point of accountability throughout their project.",
+        image: "/project/communication.webp",
       },
-      //   {
-      //     title: "Communauté Collaborative",
-      //     description:
-      //       "La structure hexagonale favorise naturellement les interactions sociales et la collaboration entre les habitants.",
-      //     image: "/project/commu.webp",
-      //   },
     ],
   },
-
-  //   vision: {
-  //     title: "Notre Vision",
-  //     content:
-  //       "Écoville n'est pas seulement une ville, c'est un écosystème vivant où chaque habitant, à l'instar d'une abeille dans sa ruche, contribue à la prospérité et à la durabilité de l'ensemble. Ensemble, construisons un avenir où l'urbanisation rime avec préservation.",
-  //   },
-
-  //   slogan: "Écoville : Où chaque cellule compte, où chaque action résonne.",
 } as EcovilleProjectData;
 
 export default ecovilleProjectData;

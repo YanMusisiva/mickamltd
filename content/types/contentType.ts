@@ -102,10 +102,11 @@ export interface FaqData {
   answer: string;
 }
 
-export interface Restaurant {
+export interface ProjectVideo {
   title: string;
   description: string;
-  image: string;
+  image: string; // thumbnail for the video
+  video: string; // video file path
 }
 
 export interface CulinaryArticle {
@@ -117,7 +118,13 @@ export interface CulinaryArticle {
 export interface EcovilleCulinaryData {
   title: string;
   content: string;
-  highlightedRestaurant: Restaurant;
+  highlightedRestaurant: ProjectVideo;
+  articles: ProjectVideo[];
+}
+
+export interface testimonyData {
+  title: string;
+  content: string;
   articles: CulinaryArticle[];
 }
 
@@ -132,5 +139,6 @@ export interface EcovilleData {
   economy: EcovilleEconomyData;
   tourism: EcovilleTourismData;
   culinary: EcovilleCulinaryData;
+  testimony: testimonyData;
   faq: FaqData[];
 }

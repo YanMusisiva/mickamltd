@@ -8,7 +8,7 @@ export const Archi = () => {
   const { title, content, features } = architectureData;
 
   return (
-    <section id="architecture" className="py-20 my-10">
+    <section id="architecture" className="py-4 my-4">
       <h3 className="text-fluid-2xl lg:text-fluid-3xl tracking-wider container leading-none font-bold max-">
         {title}
       </h3>

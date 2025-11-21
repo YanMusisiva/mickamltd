@@ -2,33 +2,54 @@ import { FaqData } from "@/content/types/contentType";
 
 export const faqItems: FaqData[] = [
   {
-    question: "Qu'est-ce qu'Écoville ?",
+    question: "What does Mickam (U) Ltd do?",
     answer:
-      "Écoville est une cité utopique écologique, autosuffisante et conçue pour minimiser son impact environnemental tout en favorisant une vie communautaire active et ouverte.",
+      "Mickam (U) Ltd is a Ugandan construction and engineering company delivering full building and civil works solutions for residential, commercial, industrial, and public sector clients across Uganda and East Africa.",
   },
   {
-    question: "Comment Écoville est-elle gouvernée ?",
+    question: "What types of projects do you handle?",
     answer:
-      "La gouvernance d'Écoville est basée sur un modèle démocratique participatif, inspiré de l'organisation des ruches, où les citoyens participent activement à la prise de décision via des plateformes numériques et des assemblées citoyennes.",
+      "We execute residential estates, villas, apartments, commercial buildings, offices, warehouses, workshops, roads, drainage systems, storm-water solutions, earthworks, and turnkey Design–Build (EPC) projects.",
   },
   {
-    question: "Quels sont les principes de construction à Écoville ?",
+    question: "Why do clients choose Mickam?",
     answer:
-      "Les bâtiments d'Écoville sont conçus selon des principes de construction écologique, en utilisant des matériaux durables, une architecture bioclimatique et des énergies renouvelables.",
+      "Clients choose us for our disciplined timelines, safety-first culture, transparent communication, value engineering, strong local teams, and proven track record of delivering quality since 2019.",
   },
   {
-    question: "Quelles activités peut-on faire à Écoville ?",
+    question: "Do you provide project and cost management?",
     answer:
-      "Écoville propose une variété d'activités, des randonnées immersives en forêt aux ateliers de permaculture, ainsi que des visites de serres bioluminescentes et des événements communautaires.",
+      "Yes. We offer planning, scheduling, supervision, quantity surveying, BOQs, cost control, contract administration (FIDIC/JB), QA/QC, and HSE management throughout the project lifecycle.",
   },
   {
-    question: "Écoville est-elle autosuffisante ?",
+    question: "How do you ensure quality and safety on site?",
     answer:
-      "Oui, Écoville est autosuffisante grâce à l'utilisation d'énergies renouvelables, la production locale de nourriture et une gestion durable des ressources.",
+      "We apply strict QA/QC checks, certified materials, professional supervision, and enforce a zero-harm HSE culture with training, inspections, PPE, and risk assessments.",
   },
   {
-    question: "Comment puis-je participer à la vie communautaire d'Écoville ?",
+    question:
+      "Do you support clients with approvals and regulatory compliance?",
     answer:
-      "Les citoyens d'Écoville peuvent participer à la vie communautaire en rejoignant des groupes de travail, en prenant part à des assemblées citoyennes et en contribuant aux décisions via des applications numériques participatives.",
+      "Yes. We assist with building permits, technical submissions, inspections, environmental compliance, and coordination with authorities to streamline project initiation.",
+  },
+  {
+    question: "Which regions do you operate in?",
+    answer:
+      "Our primary base is Uganda, and we also deliver projects and partnerships across East Africa, including Kenya, Tanzania, Rwanda, South Sudan, and the DRC.",
+  },
+  {
+    question: "Can you work with tight budgets and fixed timelines?",
+    answer:
+      "Absolutely. Through value engineering, optimized construction methods, and disciplined scheduling, we meet budgets and deadlines without compromising quality.",
+  },
+  {
+    question: "Do you offer Design–Build (EPC) services?",
+    answer:
+      "Yes. We provide turnkey EPC solutions where we handle design, engineering, procurement, and construction under one contract, giving clients a single point of accountability.",
+  },
+  {
+    question: "How can I request a quotation or schedule a site visit?",
+    answer:
+      "You can reach us through our website, email, or phone. A project manager will arrange a site visit and provide a detailed quotation based on your project’s scope and requirements.",
   },
 ];

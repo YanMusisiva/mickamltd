@@ -2,129 +2,128 @@ import { MapPin, Binoculars, Bike, Wifi, Leaf } from "lucide-react";
 import { EcovilleTourismData } from "./types/contentType";
 
 export const tourismData: EcovilleTourismData = {
-  title: "Découvrir Écoville",
+  title: "Explore Our Mickam Projects",
   content:
-    "Écoville offre une **expérience touristique unique**, alliant innovation écologique et immersion dans la nature. Que vous soyez passionné d'architecture durable, amateur de nature ou simplement curieux de découvrir le futur de l'urbanisme, Écoville a quelque chose à vous offrir.",
+    "Discover the innovative construction projects of Mickam (U) Ltd across Uganda and East Africa. Whether you are a potential client, investor, or simply interested in sustainable engineering, our projects showcase quality, safety, and advanced engineering solutions.",
+
   features: [
     {
-      title: "La Tour Hexagonale",
+      title: "Residential Estates & Villas",
       description:
-        "Observatoire offrant une vue panoramique sur la ville et ses environs",
-      image: "/tourism/tower.webp",
+        "Modern residential estates and villas delivered with high-quality finishes and sustainable design.",
+      image: "/tourism/residential-estates.webp",
       icon: (
         <div className="border rounded-3xl p-4 w-fit mx-auto">
           <MapPin strokeOpacity={0.8} size={40} className="text-white" />
         </div>
       ),
       cta: {
-        buttonText: "Découvrir",
-        href: "/",
-        price: "10 €",
-        desc: "Prenez de la hauteur !",
+        buttonText: "View Project",
+        href: "/projects/residential",
+        price: "N/A",
+        desc: "Explore our residential construction solutions",
       },
     },
     {
-      title: "Safari Urbain Écologique",
+      title: "Commercial & Office Buildings",
       description:
-        "Visite guidée de la biodiversité intégrée dans l'architecture de la ville",
-      image: "/tourism/safari.webp",
+        "High-standard office spaces, retail, and hospitality buildings designed for efficiency and aesthetics.",
+      image: "/tourism/commercial-buildings.webp",
       icon: (
         <div className="border rounded-3xl p-4 w-fit mx-auto">
           <Binoculars strokeOpacity={0.8} size={40} className="text-white" />
         </div>
       ),
       cta: {
-        buttonText: "Découvrir",
-        href: "/",
-        price: "Gratuit",
-        desc: "Suivez le parcours à votre rythme",
+        buttonText: "View Project",
+        href: "/projects/commercial",
+        price: "N/A",
+        desc: "Discover our commercial and office building projects",
       },
     },
     {
-      title: "Les Ruches Urbaines",
+      title: "Civil & Infrastructure Works",
       description:
-        "Découverte de l'apiculture urbaine et dégustation de miel local",
-      image: "/tourism/beehives.webp",
-      icon: (
-        <div className="border rounded-3xl p-4 w-fit mx-auto">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeOpacity={0.8}
-          >
-            <path d="m8 2 1.88 1.88" />
-            <path d="M14.12 3.88 16 2" />
-            <path d="M9 7V6a3 3 0 1 1 6 0v1" />
-            <path d="M5 7a3 3 0 1 0 2.2 5.1C9.1 10 12 7 12 7s2.9 3 4.8 5.1A3 3 0 1 0 19 7Z" />
-            <path d="M7.56 12h8.87" />
-            <path d="M7.5 17h9" />
-            <path d="M15.5 10.7c.9.9 1.4 2.1 1.5 3.3 0 5.8-5 8-5 8s-5-2.2-5-8c.1-1.2.6-2.4 1.5-3.3" />
-          </svg>
-        </div>
-      ),
-      cta: {
-        buttonText: "Découvrir",
-        href: "/",
-        price: "Gratuit",
-        desc: "Goutez aux délices de l'apiculture",
-      },
-    },
-    {
-      title: "Vélo-Tour des Innovations",
-      description:
-        "Circuit à vélo présentant les technologies vertes d'Écoville",
-      image: "/tourism/bike-tour.webp",
+        "Roads, drainage systems, pavements, retaining structures, and minor bridges built with durability and safety in mind.",
+      image: "/tourism/civil-infrastructure.webp",
       icon: (
         <div className="border rounded-3xl p-4 w-fit mx-auto">
           <Bike strokeOpacity={0.8} size={40} className="text-white" />
         </div>
       ),
       cta: {
-        buttonText: "Découvrir",
-        href: "/",
-        price: "Gratuit",
-        desc: "Cultivez vous en vélo",
+        buttonText: "View Project",
+        href: "/projects/infrastructure",
+        price: "N/A",
+        desc: "See how we deliver reliable civil engineering solutions",
       },
     },
     {
-      title: "Forêt Verticale",
+      title: "Turnkey EPC Projects",
       description:
-        "Promenade dans les jardins suspendus des gratte-ciels écologiques",
-      image: "/tourism/vertical-forest.webp",
-      icon: (
-        <div className="border rounded-3xl p-4 w-fit mx-auto">
-          <Leaf strokeOpacity={0.8} size={40} className="text-white" />
-        </div>
-      ),
-      cta: {
-        buttonText: "Découvrir",
-        href: "/",
-        price: "Gratuit",
-        desc: "Expérience végétale et architecturale époustouflante",
-      },
-    },
-    {
-      title: "Capsule Éco-Futuriste",
-      description:
-        "Expérience de logement dans des modules autonomes et écologiques",
-      image: "/tourism/eco-capsule.webp",
+        "End-to-end Design-Build projects where we handle engineering, procurement, and construction under one contract.",
+      image: "/tourism/epc-projects.webp",
       icon: (
         <div className="border rounded-3xl p-4 w-fit mx-auto">
           <Wifi strokeOpacity={0.8} size={40} className="text-white" />
         </div>
       ),
       cta: {
-        buttonText: "Découvrir",
-        href: "/",
-        price: "50 €",
-        desc: "Expérience de logement dans des modules autonomes et écologiques",
+        buttonText: "View Project",
+        href: "/projects/epc",
+        price: "N/A",
+        desc: "Explore our turnkey EPC solutions",
+      },
+    },
+    {
+      title: "Structural & Architectural Support",
+      description:
+        "Coordination of MEP trades, structural detailing, renovations, and adaptive reuse for sustainable buildings.",
+      image: "/tourism/structural-support.webp",
+      icon: (
+        <div className="border rounded-3xl p-4 w-fit mx-auto">
+          <Leaf strokeOpacity={0.8} size={40} className="text-white" />
+        </div>
+      ),
+      cta: {
+        buttonText: "View Project",
+        href: "/projects/structural",
+        price: "N/A",
+        desc: "Learn about our structural and architectural expertise",
+      },
+    },
+    {
+      title: "Project & Cost Management",
+      description:
+        "Professional planning, scheduling, cost control, and QA/QC management to ensure projects meet deadlines and budgets.",
+      image: "/tourism/project-management.webp",
+      icon: (
+        <div className="border rounded-3xl p-4 w-fit mx-auto">
+          <MapPin strokeOpacity={0.8} size={40} className="text-white" />
+        </div>
+      ),
+      cta: {
+        buttonText: "Learn More",
+        href: "/services/project-management",
+        price: "N/A",
+        desc: "See how we manage projects efficiently",
+      },
+    },
+    {
+      title: "Regional Projects",
+      description:
+        "Our operations span Uganda and East Africa, showcasing projects in Kenya, Tanzania, Rwanda, South Sudan, and the DRC.",
+      image: "/tourism/regional-projects.webp",
+      icon: (
+        <div className="border rounded-3xl p-4 w-fit mx-auto">
+          <Binoculars strokeOpacity={0.8} size={40} className="text-white" />
+        </div>
+      ),
+      cta: {
+        buttonText: "Discover",
+        href: "/projects/regional",
+        price: "N/A",
+        desc: "Explore our regional project portfolio",
       },
     },
   ],
