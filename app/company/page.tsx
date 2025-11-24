@@ -2,6 +2,7 @@ import { BoldText } from "@/components/micro-components/BoldText";
 import { ContentBorder } from "@/components/micro-components/ContentBorder";
 import companyData from "@/content/companyData";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function Company() {
   const { title, content, keyPoints } = companyData;
@@ -139,9 +140,11 @@ export default function Company() {
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
               >
                 <div className="relative h-56">
-                  <img
+                  <Image
                     src={person.image}
                     alt={person.name}
+                    width={500}
+                    height={500}
                     className="w-full h-full object-cover"
                   />
                 </div>

@@ -166,7 +166,7 @@ export const Footer = () => {
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
               Mickam Ltd, your trusted partner in construction and civil
               engineering, combines rigor, safety, and timely delivery to bring
-              your projects to life. Together, let's build a strong and
+              your projects to life. Together, let&apos;s build a strong and
               sustainable future in Uganda and East Africa.
             </p>
             <div className="flex gap-2 flex-wrap">

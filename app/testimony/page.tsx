@@ -1,12 +1,10 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+
 import Image from "next/image";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import testimonyData from "@/content/testimonyData";
 import Link from "next/link";
 import { HoverLinkEffect } from "@/components/micro-components/HoverLinkEffect";
-
-const testimony = testimonyData;
 
 export const BlogCuisine: React.FC = () => {
   return (

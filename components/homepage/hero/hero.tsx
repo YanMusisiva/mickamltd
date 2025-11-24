@@ -16,13 +16,6 @@ const Hero: React.FC = () => {
   const containerRef = useRef<HTMLElement>(null);
 
   /* ---------------------- MENU ITEMS ---------------------- */
-  const menuItems: MenuItem[] = [
-    { label: "Projet", target: "#project" },
-    { label: "Histoire", target: "#histoire", offset: -80 },
-    { label: "Signature", target: "#architecture" },
-    { label: "Activités", target: "#tourisme", offset: 100 },
-    { label: "Restauration", target: "#cuisine" },
-  ];
 
   /* ---------------------- SLIDESHOW ----------------------- */
   const images = ["/bg/bg_home.webp", "/bg/firstBg.webp", "/og_image.jpg"];
@@ -33,7 +26,7 @@ const Hero: React.FC = () => {
       setCurrentImage((prev) => (prev + 1) % images.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   /* ---------------------- GSAP ----------------------- */
   useGSAP(
@@ -49,12 +42,6 @@ const Hero: React.FC = () => {
   );
 
   /* ---------------------- SCROLL HANDLER ----------------------- */
-  const handleMenuClick = (target: string, offset: number = 0): void => {
-    gsap.to(window, {
-      duration: 0.5,
-      scrollTo: { y: target, offsetY: offset },
-    });
-  };
 
   return (
     <section
