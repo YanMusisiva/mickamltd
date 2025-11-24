@@ -6,12 +6,6 @@ import { Linkedin, Youtube } from "lucide-react";
 import Image from "next/image";
 import { FaTiktok } from "react-icons/fa";
 
-interface MenuItem {
-  label: string;
-  target: string;
-  offset?: number;
-}
-
 const Hero: React.FC = () => {
   const containerRef = useRef<HTMLElement>(null);
 
