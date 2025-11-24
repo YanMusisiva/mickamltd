@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   /* ---------------------- MENU ITEMS ---------------------- */
 
   /* ---------------------- SLIDESHOW ----------------------- */
-  const images = ["/bg/bg_home.webp", "/bg/firstBg.webp", "/og_image.jpg"];
+  const images = ["/project/building.jpg", "/bg_home2.jpg"];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -111,7 +111,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* ---------------------- IMAGE PART (UNCHANGED VISUALLY) ---------------------- */}
-      <div className="relative parralelogram w-full lg:w-1/2 h-full aspect-square overflow-hidden">
+      <div className="relative parralelogram w-full lg:w-1/2 h-full aspect-square overflow-hidden mt-4 lg:mt-7">
         <div className="absolute inset-0 transition-opacity duration-1000 opacity-100">
           <Image
             key={currentImage}

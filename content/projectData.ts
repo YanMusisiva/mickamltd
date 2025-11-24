@@ -15,25 +15,25 @@ export const ecovilleProjectData = {
       title: "Building Construction",
       description:
         "We deliver residential estates, villas, apartments, commercial buildings, offices, hospitality spaces, and industrial facilities with high-quality workmanship and durable finishes.",
-      image: "/project/building.webp",
+      image: "/project/building.jpg",
     },
     {
       title: "Civil & Infrastructure Works",
       description:
         "Our civil engineering services include roads, pavements, drainage systems, culverts, retaining walls, earthworks, and minor bridges designed for long-term resilience.",
-      image: "/project/infrastructure.webp",
+      image: "/project/infrastructure.jpg",
     },
     {
       title: "Project & Cost Management",
       description:
         "We provide planning, scheduling, site supervision, quantity surveying, BOQs, cost control, contract administration, and full QA/QC and HSE oversight throughout the project lifecycle.",
-      image: "/project/management.webp",
+      image: "/project/management.jpg",
     },
     {
       title: "Procurement & Enabling Services",
       description:
         "From materials sourcing and logistics to equipment hire, survey coordination, and regulatory approvals, we provide reliable enabling services to streamline project delivery.",
-      image: "/project/procurement.webp",
+      image: "/project/procurement.jpg",
     },
   ],
 
@@ -44,19 +44,19 @@ export const ecovilleProjectData = {
         title: "Trusted Delivery",
         description:
           "Since 2019, we've completed projects with disciplined timelines, reliable budgeting, and a strong reputation for meeting client expectations.",
-        image: "/project/trusted.webp",
+        image: "/project/trusted.jpg",
       },
       {
         title: "Safety & Quality First",
         description:
           "Our zero-harm safety culture, strict QA/QC processes, and certified materials ensure durable, compliant, and high-quality construction.",
-        image: "/project/quality.webp",
+        image: "/project/quality.jpg",
       },
       {
         title: "Transparent Communication",
         description:
           "Clients enjoy clear reporting, consistent updates, open communication, and a single point of accountability throughout their project.",
-        image: "/project/communication.webp",
+        image: "/project/communication.jpg",
       },
     ],
   },
