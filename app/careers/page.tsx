@@ -101,7 +101,7 @@ const jobPostings: JobPosting[] = [
   },
 ];
 
-export const CareersPage: React.FC = () => {
+const CareersPage: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
