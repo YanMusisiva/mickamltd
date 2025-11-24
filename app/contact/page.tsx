@@ -13,7 +13,7 @@ import {
   Send,
 } from "lucide-react";
 
-export const ContactPage: React.FC = () => {
+const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",

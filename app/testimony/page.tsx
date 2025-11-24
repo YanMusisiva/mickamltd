@@ -6,7 +6,7 @@ import testimonyData from "@/content/testimonyData";
 import Link from "next/link";
 import { HoverLinkEffect } from "@/components/micro-components/HoverLinkEffect";
 
-export const BlogCuisine: React.FC = () => {
+const BlogCuisine: React.FC = () => {
   return (
     <section id="cuisine" className="max-w-6xl mx-auto px-4 py-8">
       {/* Header Section */}
