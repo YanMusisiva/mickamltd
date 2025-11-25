@@ -20,44 +20,47 @@ export const StickySection = ({ features }: StickySectionProps) => {
             index % 2 === 0 ? "flex-row-reverse" : "flex-row"
           )}
         >
-          <div className="text w-full lg:w-1/2 flex items-center justify-center gap-10 flex-col">
-            <div>
+          {/* TEXT AREA */}
+          <div className="text w-full lg:w-1/2 flex items-center justify-center gap-10 flex-col text-center">
+            <div className="w-full flex flex-col items-center">
               {feature.icon}
-              <p className="text-fluid-3xl max-w-xl leading-none text-white font-bold pt-2 mx-auto w-fit text-center text-balance">
+
+              <p className="text-fluid-3xl max-w-xl leading-none text-white font-bold pt-2 text-center">
                 {feature.title}
               </p>
-              <p className="mt-3 text-xl text-slate-200 pt-2 max-w-2xl px-2 text-balance mx-auto max-lg:text-center">
+
+              <p className="mt-3 text-xl text-slate-200 pt-2 max-w-2xl px-2 text-center">
                 {feature.description}
               </p>
 
               {feature.cta && (
-                <>
-                  <p className="mt-3 text-md text-green-300 font-bold italic pt-2 max-w-2xl px-2 text-balance mx-auto w-fit max-lg:text-center">
-                    <Quote className="inline-block w-4 h-4 mr-2 fill-white/10 -scale-x-100 -translate-y-2" />
-                    {feature.cta.desc}
-                    <Quote className="inline-block size-3 ml-2 fill-white/10 translate-y-2" />
-                  </p>
-                </>
+                <p className="mt-3 text-md text-green-300 font-bold italic pt-2 max-w-2xl px-2 text-center">
+                  <Quote className="inline-block w-4 h-4 mr-2 opacity-50 -scale-x-100 -translate-y-2" />
+                  {feature.cta.desc}
+                  <Quote className="inline-block size-3 ml-2 opacity-50 translate-y-2" />
+                </p>
               )}
             </div>
+
             {feature.cta && (
-              <div>
-                <Link
-                  href={`#feature-g${index}`}
-                  className="text-lg text-center hover:scale-105 active:scale-95 transition-all text-white font-bold bg-green-700 hover:bg-green-600 py-2 px-3 rounded-xl flex items-center gap-2 group"
-                >
-                  {feature.cta.buttonText}{" "}
-                  <ArrowRight className="inline-block w-0 group-hover:w-5 transition-all" />
-                </Link>
-              </div>
+              <Link
+                href={feature.cta.href}
+                className="text-lg hover:scale-105 active:scale-95 transition-all text-white font-bold bg-green-700 hover:bg-green-600 py-2 px-3 rounded-xl flex items-center gap-2"
+              >
+                {feature.cta.buttonText}
+                <ArrowRight className="inline-block w-0 group-hover:w-5 transition-all" />
+              </Link>
             )}
-            <span className="mx-auto h-[1px] w-56 lg:w-96 bg-neutral-800  flex justify-center items-center relative">
+
+            <span className="mx-auto h-[1px] w-56 lg:w-96 bg-neutral-800 flex justify-center items-center relative">
               <Hexagon className="fill-white stroke-none" size={30} />
             </span>
           </div>
+
+          {/* VIDEO AREA */}
           <InsetAnimVideo
-            src="/videos/epc-projects.mp4"
-            index={1}
+            src={feature.video}
+            index={index}
             className="group-hover:scale-105"
           />
         </div>

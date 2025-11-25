@@ -14,8 +14,8 @@ const BlogCuisine: React.FC = () => {
         <h3 className="text-fluid-4xl font-bold mb-2">{testimonyData.title}</h3>
         <p className="text-lg text-gray-600 mb-4">{testimonyData.content}</p>
         <Link
-          href="/#cuisine"
-          className="text-green-700 group relative gap-2 w-fit flex items-center pb-2"
+          href="/contact"
+          className="text-black group relative gap-2 w-fit flex items-center pb-2"
         >
           <HoverLinkEffect />
           Contact us <ArrowRight className="ml-2 h-4 w-4" />

@@ -154,7 +154,7 @@ export const BlogCuisine: React.FC = () => {
             <div
               key={index}
               className="min-w-80 snap-mandatory min-h-[400px] flex flex-col p-2 rounded-xl group transition-all duration-300 hover:shadow-lg cursor-pointer"
-              onClick={() => setSelectedVideo(article.video!)} // la vidéo envoyée au modal
+              onClick={() => setSelectedVideo(article.video!)}
             >
               {/* Aperçu vidéo */}
               <div className="relative aspect-video overflow-hidden rounded-xl bg-black">
@@ -166,7 +166,7 @@ export const BlogCuisine: React.FC = () => {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="bg-white/30 p-4 rounded-full">
-                    <ArrowRight className="h-8 w-8 text-green-700" />
+                    <ArrowRight className="h-8 w-8 text-yellow-600" />
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@ export const BlogCuisine: React.FC = () => {
         <button
           onClick={() => handleScroll("left")}
           disabled={isLeftDisabled}
-          className="max-lg:hidden absolute left-0 top-1/2 transform -translate-y-1/2 bg-green-600 hover:bg-green-500 p-2 shadow-md hexa disabled:bg-gray-400 hover:scale-105 active:scale-95 transition-all"
+          className="max-lg:hidden absolute left-0 top-1/2 transform -translate-y-1/2 bg-yellow-600 hover:bg-yellow-500 p-2 shadow-md hexa disabled:bg-gray-400 hover:scale-105 active:scale-95 transition-all"
         >
           <ChevronLeft className="h-6 w-6 text-white" strokeWidth={4} />
         </button>
@@ -195,7 +195,7 @@ export const BlogCuisine: React.FC = () => {
           onClick={() => handleScroll("right")}
           disabled={isRightDisabled}
           className={cn(
-            "max-lg:hidden absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-600 hover:bg-green-500 p-2 shadow-md hexa disabled:bg-gray-400 hover:scale-105 active:scale-95 transition-all"
+            "max-lg:hidden absolute right-0 top-1/2 transform -translate-y-1/2 bg-yellow-600 hover:bg-yellow-500 p-2 shadow-md hexa disabled:bg-gray-400 hover:scale-105 active:scale-95 transition-all"
           )}
         >
           <ChevronRight className="h-6 w-6 text-white" strokeWidth={4} />

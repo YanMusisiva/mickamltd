@@ -1,5 +1,5 @@
 "use client";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+
 import {
   Hexagon,
   Mail,
@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaTiktok } from "react-icons/fa";
 
 const menuItems = [
   { label: "Home", target: "/" },
@@ -29,18 +30,18 @@ const quickLinks = [
 const contactInfo = [
   {
     icon: Mail,
-    label: "contact@mickam.com",
-    href: "mailto:contact@mickam.com",
+    label: "contact@mickam.co",
+    href: "mailto:contact@mickam.co",
   },
   {
     icon: Phone,
-    label: "+256 700 123 456",
-    href: "tel:+256700123456",
+    label: "+256 752 277 320",
+    href: "tel:+256752277320",
   },
   {
     icon: MapPin,
     label: "Kampala, Uganda",
-    href: "https://maps.google.com?q=Kampala+Uganda",
+    href: "https://maps.app.goo.gl/kd5kKtLwB8QuRdcD6",
   },
 ];
 
@@ -64,10 +65,10 @@ const socialLinks = [
     color: "hover:text-blue-400",
   },
   {
-    icon: GitHubLogoIcon,
-    label: "GitHub",
-    href: "https://github.com/ecoville",
-    color: "hover:text-gray-700",
+    icon: FaTiktok,
+    label: "TikTok",
+    href: "https://www.tiktok.com/@mickamultd?_r=1&_t=ZM-91h6L06g7hr",
+    color: "hover:text-red-900",
   },
 ];
 
@@ -108,9 +109,9 @@ export const Footer = () => {
                 <li key={index}>
                   <Link
                     href={item.target}
-                    className="text-gray-600 hover:text-green-700 transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-gray-600 hover:text-yellow-700 transition-colors duration-300 flex items-center gap-2 group"
                   >
-                    <span className="w-1 h-1 bg-green-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    <span className="w-1 h-1 bg-yellow-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {item.label}
                   </Link>
                 </li>
@@ -128,9 +129,9 @@ export const Footer = () => {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-green-700 transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-gray-600 hover:text-yellow-700 transition-colors duration-300 flex items-center gap-2 group"
                   >
-                    <span className="w-1 h-1 bg-green-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    <span className="w-1 h-1 bg-yellow-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {link.label}
                   </Link>
                 </li>
@@ -149,7 +150,7 @@ export const Footer = () => {
                     <Link
                       href={info.href}
                       target="_blank"
-                      className="text-gray-600 hover:text-green-700 transition-colors duration-300 flex items-center gap-2 group"
+                      className="text-gray-600 hover:text-yellow-700 transition-colors duration-300 flex items-center gap-2 group"
                     >
                       <Icon className="w-4 h-4 group-hover:scale-110 transition-transform" />
                       <span className="text-sm">{info.label}</span>
@@ -184,7 +185,7 @@ export const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-gradient-to-r from-transparent via-green-300 to-transparent mb-8"></div>
+        <div className="h-px bg-gradient-to-r from-transparent via-yellow-300 to-transparent mb-8"></div>
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -198,7 +199,7 @@ export const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-10 h-10 rounded-full bg-gray-100 hover:bg-green-600 text-gray-700 ${social.color} transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95`}
+                  className={`w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-600 text-gray-700 ${social.color} transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95`}
                   title={social.label}
                 >
                   <Icon className="w-5 h-5" />

@@ -47,7 +47,7 @@ const FAQItem: React.FC<{
         <span className={cn("text-lg font-medium relative transition")}>
           <span
             className={cn(
-              "absolute bottom-0 h-[2px] bg-green-400 w-full scale-x-0 origin-left transition-all duration-500 ease-in-out",
+              "absolute bottom-0 h-[2px] bg-yellow-400 w-full scale-x-0 origin-left transition-all duration-500 ease-in-out",
               isOpen ? "scale-x-100" : "scale-x-0"
             )}
           ></span>
@@ -61,7 +61,7 @@ const FAQItem: React.FC<{
           <Hexagon
             className={cn(
               "absolute -z-10 -top-[1px]",
-              isOpen ? "rotate-180 stroke-green-400 " : ""
+              isOpen ? "rotate-180 stroke-yellow-400 " : ""
             )}
             strokeOpacity={0.3}
             size={25}

@@ -8,7 +8,7 @@ import {
 import { Users, Target, TrendingUp, Zap } from "lucide-react";
 
 export const History = () => {
-  const { title, afterImg, beforeImg } = historyData;
+  const { title, afterImg, beforeImg, afterImg2, beforeImg2 } = historyData;
 
   return (
     <section id="histoire" className=" py-4">
@@ -74,11 +74,7 @@ export const History = () => {
               )}
             </Suspense>
 
-            <h5 className="text-xl font-bold">Description</h5>
-            <p className="text-gray-600">
-              This is a simple description related to the first image
-              comparison.
-            </p>
+            <h5 className="text-xl font-bold">Kampala Makindye</h5>
           </div>
 
           {/* --- Block 2 --- */}
@@ -88,7 +84,7 @@ export const History = () => {
                 <ReactCompareSlider
                   itemOne={
                     <ReactCompareSliderImage
-                      src={beforeImg}
+                      src={beforeImg2}
                       alt="Before Image"
                       className="cursor-pointer"
                       loading="lazy"
@@ -96,7 +92,7 @@ export const History = () => {
                   }
                   itemTwo={
                     <ReactCompareSliderImage
-                      src={afterImg}
+                      src={afterImg2}
                       alt="After Image"
                       className="cursor-pointer"
                       loading="lazy"
@@ -106,10 +102,7 @@ export const History = () => {
               )}
             </Suspense>
 
-            <h5 className="text-xl font-bold">Description</h5>
-            <p className="text-gray-600">
-              Description related to the second image comparison.
-            </p>
+            <h5 className="text-xl font-bold">Kampala Lukuli</h5>
           </div>
         </div>
       </div>

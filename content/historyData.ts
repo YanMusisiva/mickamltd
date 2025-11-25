@@ -4,8 +4,10 @@ export const historyData: EcovilleHistoryData = {
   title: "From Vision to Reality",
   content:
     "Founded in 2019, Mickam (U) Ltd began as a small Ugandan construction and engineering company with a clear vision: to deliver high-quality, safe, and sustainable building solutions across Uganda and East Africa. Over the years, Mickam has grown into a trusted regional partner, executing complex projects on time, on budget, and to specification, demonstrating that disciplined project management and a client-first approach lead to real impact and success.",
-  beforeImg: "/history/before.webp",
-  afterImg: "/history/after.webp",
+  beforeImg: "/history/before.jpg",
+  afterImg: "/history/after.jpg",
+  beforeImg2: "/history/before2.jpg",
+  afterImg2: "/history/after2.jpg",
   keyPoints: [
     { title: "Founded", description: "2019" },
     {

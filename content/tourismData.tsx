@@ -23,6 +23,7 @@ export const tourismData: EcovilleTourismData = {
         price: "N/A",
         desc: "Contact us for residential project inquiries",
       },
+      video: "/tourism/regional-projects-video.mp4",
     },
     {
       title: "Commercial & Office Buildings",
@@ -38,8 +39,9 @@ export const tourismData: EcovilleTourismData = {
         buttonText: "Contact Us",
         href: "/contact",
         price: "N/A",
-        desc: "",
+        desc: "Get in touch for commercial building projects",
       },
+      video: "/tourism/regional-projects-video.mp4",
     },
     {
       title: "Civil & Infrastructure Works",
@@ -55,8 +57,9 @@ export const tourismData: EcovilleTourismData = {
         buttonText: "Contact Us",
         href: "/contact",
         price: "N/A",
-        desc: "See how we deliver reliable civil engineering solutions",
+        desc: "Get in touch for civil and infrastructure projects",
       },
+      video: "/tourism/regional-projects-video.mp4",
     },
     {
       title: "Turnkey EPC Projects",
@@ -72,8 +75,9 @@ export const tourismData: EcovilleTourismData = {
         buttonText: "Contact Us",
         href: "/contact",
         price: "N/A",
-        desc: "contact us for design-build",
+        desc: "Contact us for turnkey EPC project details",
       },
+      video: "/tourism/regional-projects-video.mp4",
     },
     {
       title: "Structural & Architectural Support",
@@ -89,8 +93,9 @@ export const tourismData: EcovilleTourismData = {
         buttonText: "Contact Us",
         href: "/contact",
         price: "N/A",
-        desc: "",
+        desc: "Get in touch for structural and architectural support",
       },
+      video: "/tourism/regional-projects-video.mp4",
     },
     {
       title: "Project & Cost Management",
@@ -106,8 +111,9 @@ export const tourismData: EcovilleTourismData = {
         buttonText: "Contact Us",
         href: "/contact",
         price: "N/A",
-        desc: "",
+        desc: "Get in touch for project management services",
       },
+      video: "/tourism/regional-projects-video.mp4",
     },
     {
       title: "Regional Projects",
@@ -123,8 +129,9 @@ export const tourismData: EcovilleTourismData = {
         buttonText: "Contact Us",
         href: "/contact",
         price: "N/A",
-        desc: "",
+        desc: "Contact us for regional project details",
       },
+      video: "/tourism/regional-projects-video.mp4",
     },
   ],
 };

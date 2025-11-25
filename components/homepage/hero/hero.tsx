@@ -2,9 +2,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { Linkedin, Youtube } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import Image from "next/image";
-import { FaTiktok } from "react-icons/fa";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 
 const Hero: React.FC = () => {
   const containerRef = useRef<HTMLElement>(null);
@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   /* ---------------------- MENU ITEMS ---------------------- */
 
   /* ---------------------- SLIDESHOW ----------------------- */
-  const images = ["/project/management.jpg"];
+  const images = ["/management.jpg"];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -80,15 +80,25 @@ const Hero: React.FC = () => {
               {/* Social Icons */}
               <div className="flex items-center justify-center gap-4 text-lg">
                 <div className="p-3 rounded-full bg-gray-100 hover:bg-blue-100 transition cursor-pointer">
-                  <Linkedin className="hover:text-blue-600 transition" />
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="hover:text-blue-600 transition" />
+                  </a>
                 </div>
 
                 <div className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 transition cursor-pointer">
-                  <FaTiktok className="text-xl" />
+                  <a
+                    href="https://www.tiktok.com/@mickamultd?_r=1&_t=ZM-91h6L06g7hr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTiktok className="text-xl" />
+                  </a>
                 </div>
 
                 <div className="p-3 rounded-full bg-gray-100 hover:bg-red-100 transition cursor-pointer">
-                  <Youtube className="hover:text-red-600 transition" />
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <FaYoutube className="hover:text-red-600 transition" />
+                  </a>
                 </div>
               </div>
             </div>

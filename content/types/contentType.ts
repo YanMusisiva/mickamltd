@@ -7,7 +7,20 @@ export interface Feature {
   icon?: React.ReactNode;
   cta?: {
     buttonText?: string;
-    href?: string;
+    href: string;
+    price: string;
+    desc?: string;
+  };
+  video: string;
+}
+export interface Feature1 {
+  title: string;
+  description: string;
+  image?: string;
+  icon?: React.ReactNode;
+  cta?: {
+    buttonText?: string;
+    href: string;
     price: string;
     desc?: string;
   };
@@ -43,13 +56,15 @@ export interface EcovilleHistoryData {
   content: string;
   beforeImg: string;
   afterImg: string;
+  beforeImg2: string;
+  afterImg2: string;
   keyPoints: KeyPoint[];
 }
 
 export interface EcovilleArchitectureData {
   title: string;
   content: string;
-  features: Feature[];
+  features: Feature1[];
 }
 
 export interface EcovilleGovernanceData {

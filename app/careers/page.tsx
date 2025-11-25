@@ -203,7 +203,9 @@ const CareersPage: React.FC = () => {
   return (
     <section id="careers" className="max-w-6xl mx-auto px-4 py-8">
       <div className="mb-8">
-        <h1 className="text-fluid-4xl font-bold mb-2">Join Mickam (U) Ltd</h1>
+        <h3 className="text-fluid-2xl lg:text-fluid-4xl 3xl:text-fluid-5xl container leading-none font-bold mb-6">
+          Join Mickam (U) Ltd
+        </h3>
         <p className="text-lg text-gray-600 mb-4">
           We are looking for talented professionals to deliver quality and
           sustainable construction across Uganda and East Africa.
@@ -222,7 +224,7 @@ const CareersPage: React.FC = () => {
               className={cn(
                 "min-w-72 snap-mandatory p-6 rounded-xl transition-all duration-300 text-left",
                 selectedJob?.id === job.id
-                  ? "bg-green-600 text-white shadow-lg scale-105"
+                  ? "bg-yellow-600 text-white shadow-lg scale-105"
                   : "bg-gray-100 hover:bg-gray-200 text-gray-800"
               )}
             >
@@ -248,14 +250,14 @@ const CareersPage: React.FC = () => {
         <button
           onClick={() => handleScroll("left")}
           disabled={isLeftDisabled}
-          className="max-lg:hidden absolute left-0  top-1/2 transform -translate-y-1/2 bg-green-600 hover:bg-green-500 p-2 shadow-md hexa disabled:bg-gray-400 hover:scale-105 active:scale-95 transition-all"
+          className="max-lg:hidden absolute left-0  top-1/2 transform -translate-y-1/2 bg-yellow-600 hover:bg-yellow-500 p-2 shadow-md hexa disabled:bg-gray-400 hover:scale-105 active:scale-95 transition-all"
         >
           <ChevronLeft className="h-6 w-6 text-white" strokeWidth={4} />
         </button>
         <button
           onClick={() => handleScroll("right")}
           disabled={isRightDisabled}
-          className="max-lg:hidden absolute right-0  top-1/2 transform -translate-y-1/2 bg-green-600 hover:bg-green-500 p-2 shadow-md hexa disabled:bg-gray-400 hover:scale-105 active:scale-95 transition-all"
+          className="max-lg:hidden absolute right-0  top-1/2 transform -translate-y-1/2 bg-yellow-600 hover:bg-yellow-500 p-2 shadow-md hexa disabled:bg-gray-400 hover:scale-105 active:scale-95 transition-all"
         >
           <ChevronRight className="h-6 w-6 text-white" strokeWidth={4} />
         </button>
@@ -264,7 +266,7 @@ const CareersPage: React.FC = () => {
       {selectedJob && (
         <div className="grid md:grid-cols-2 gap-12">
           {/* Job Details */}
-          <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl shadow-md">
+          <div className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-xl shadow-md">
             <h2 className="text-3xl font-bold mb-2">{selectedJob.title}</h2>
             <p className="text-gray-600 mb-6">{selectedJob.description}</p>
 
@@ -276,7 +278,7 @@ const CareersPage: React.FC = () => {
                     key={idx}
                     className="flex items-center gap-2 text-gray-700"
                   >
-                    <span className="w-2 h-2 bg-green-600 rounded-full"></span>
+                    <span className="w-2 h-2 bg-yellow-600 rounded-full"></span>
                     {req}
                   </li>
                 ))}
@@ -310,7 +312,7 @@ const CareersPage: React.FC = () => {
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   placeholder="Your full name"
                   required
                 />
@@ -325,7 +327,7 @@ const CareersPage: React.FC = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   placeholder="you@example.com"
                   required
                 />
@@ -340,7 +342,7 @@ const CareersPage: React.FC = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   placeholder="+256 7XX XXX XXX"
                   required
                 />
@@ -353,9 +355,9 @@ const CareersPage: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
-                  className="w-full flex items-center justify-center gap-2 px-4 py-3 border-2 border-dashed border-green-300 rounded-lg hover:bg-green-50 transition-all"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-3 border-2 border-dashed border-yellow-300 rounded-lg hover:bg-green-50 transition-all"
                 >
-                  <Upload className="h-5 w-5 text-green-600" />
+                  <Upload className="h-5 w-5 text-yellow-600" />
                   <span className="text-gray-700">
                     {fileName || "Click to select file"}
                   </span>
@@ -375,7 +377,7 @@ const CareersPage: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-green-600 hover:bg-green-500 text-white font-semibold py-3 rounded-lg transition-all active:scale-95 flex items-center justify-center gap-2"
+                className="w-full bg-yellow-600 hover:bg-yellow-500 text-white font-semibold py-3 rounded-lg transition-all active:scale-95 flex items-center justify-center gap-2"
               >
                 Submit Application <ArrowRight className="h-4 w-4" />
               </button>
