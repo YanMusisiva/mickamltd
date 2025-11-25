@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { ArrowRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 import ecovilleCulinaryData from "@/content/CulinaryData";
 import gsap from "gsap";
