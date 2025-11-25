@@ -2,7 +2,7 @@ import { Feature } from "@/content/types/contentType";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Hexagon, Quote } from "lucide-react";
 import Link from "next/link";
-import { InsetAnimImage } from "./InsetAnimImage";
+import { InsetAnimVideo } from "./InsetAnimVideo";
 
 type StickySectionProps = {
   features: Feature[];
@@ -55,16 +55,11 @@ export const StickySection = ({ features }: StickySectionProps) => {
               <Hexagon className="fill-white stroke-none" size={30} />
             </span>
           </div>
-          <div className="img relative max-lg:w-full w-1/2 h-[80svh] aspect-square perspective">
-            <InsetAnimImage
-              src={feature.image!}
-              alt={feature.title}
-              index={index}
-              // fill
-              // loading="lazy"
-              className="object-cover max-lg:w-full rounded-[70px]  aspect-square"
-            />
-          </div>
+          <InsetAnimVideo
+            src="/videos/epc-projects.mp4"
+            index={1}
+            className="group-hover:scale-105"
+          />
         </div>
       ))}
     </div>

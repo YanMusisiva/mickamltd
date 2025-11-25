@@ -44,7 +44,7 @@ export const History = () => {
           </div>
         ))}
       </div>
-      <h3 className="text-fluid-2xl lg:text-fluid-4xl 3xl:text-fluid-5xl container leading-none font-bold mb-6">
+      <h3 className="text-fluid-2xl lg:text-fluid-3xl 3xl:text-fluid-4xl container leading-none font-bold mb-6">
         {title}
       </h3>
       <div className="flex flex-col items-center justify-center container">

@@ -13,6 +13,53 @@ export const BlogCuisine: React.FC = () => {
   const [isRightDisabled, setIsRightDisabled] = useState(false);
 
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [isVertical, setIsVertical] = useState(false);
+
+  const handleLoadedMetadata = () => {
+    if (!videoRef.current) return;
+
+    const { videoWidth, videoHeight } = videoRef.current;
+
+    setIsVertical(videoHeight > videoWidth);
+  };
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.onloadedmetadata = () => {
+        setDuration(videoRef.current!.duration);
+      };
+    }
+  }, [selectedVideo]);
+
+  const handleTimeUpdate = () => {
+    if (videoRef.current) {
+      setCurrentTime(videoRef.current.currentTime);
+    }
+  };
+
+  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (videoRef.current) {
+      const time = Number(e.target.value);
+      videoRef.current.currentTime = time;
+      setCurrentTime(time);
+    }
+  };
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
 
   const checkScrollPosition = () => {
     if (scrollRef.current) {
@@ -66,12 +113,37 @@ export const BlogCuisine: React.FC = () => {
   return (
     <section id="cuisine" className="max-w-6xl mx-auto px-4 py-4">
       <div className="mb-8">
-        <h3 className="text-fluid-4xl font-bold mb-2">
+        <h3 className="text-fluid-3xl font-bold mb-2">
           {ecovilleCulinaryData.title}
         </h3>
         <p className="text-lg text-gray-600 mb-4">
           {ecovilleCulinaryData.content}
         </p>
+      </div>
+      <div className="grid md:grid-cols-2 gap-8 mb-8 group">
+        {/* Lecteur vidéo responsive */}
+        <div className="relative aspect-video overflow-hidden rounded-xl bg-black">
+          <video
+            src={ecovilleCulinaryData.highlightedRestaurant.video}
+            muted
+            autoPlay
+            loop
+            playsInline
+            className="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-all duration-300"
+          />
+        </div>
+
+        <div>
+          <span className="text-sm text-gray-500 mb-2 block">Featured</span>
+
+          <h2 className="text-2xl font-bold mb-2">
+            {ecovilleCulinaryData.highlightedRestaurant.title}
+          </h2>
+
+          <p className="text-gray-600 mb-4">
+            {ecovilleCulinaryData.highlightedRestaurant.description}
+          </p>
+        </div>
       </div>
 
       <div className="relative">
@@ -83,18 +155,15 @@ export const BlogCuisine: React.FC = () => {
             <div
               key={index}
               className="min-w-80 snap-mandatory min-h-[400px] flex flex-col p-2 rounded-xl group transition-all duration-300 hover:shadow-lg cursor-pointer"
-              onClick={() => setSelectedVideo(article.image!)} // Ici on simule la video src
+              onClick={() => setSelectedVideo(article.video!)} // la vidéo envoyée au modal
             >
-              <div className="relative aspect-video overflow-hidden rounded-xl">
-                <Image
-                  src={article.image!}
-                  alt={article.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 45vw"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL="/svg/placeholder.svg"
-                  className="rounded-lg mb-4 object-cover group-hover:scale-105 transition-all duration-700"
+              {/* Aperçu vidéo */}
+              <div className="relative aspect-video overflow-hidden rounded-xl bg-black">
+                <video
+                  src={article.video!}
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="bg-white/30 p-4 rounded-full">
@@ -102,9 +171,11 @@ export const BlogCuisine: React.FC = () => {
                   </div>
                 </div>
               </div>
+
               <span className="text-xs text-gray-500 mt-1 mb-2 block">
                 Video
               </span>
+
               <h3 className="text-xl font-bold mb-2 h-14">{article.title}</h3>
               <p className="text-gray-600 mb-4 line-clamp-3">
                 {article.description}
@@ -135,19 +206,52 @@ export const BlogCuisine: React.FC = () => {
       {/* Modal for video playback */}
       {selectedVideo && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
-          <div className="relative w-full max-w-4xl aspect-video rounded-xl overflow-hidden bg-black shadow-xl">
+          <div className="relative w-full max-w-4xl max-h-[90vh] rounded-xl bg-black shadow-xl overflow-hidden flex flex-col">
+            {/* Bouton fermer */}
             <button
               onClick={() => setSelectedVideo(null)}
               className="absolute top-4 right-4 z-50 bg-white rounded-full p-2 hover:bg-gray-200 transition"
             >
               <X className="h-6 w-6" />
             </button>
+
+            {/* Lecteur vidéo */}
             <video
+              ref={videoRef}
               src={selectedVideo}
-              controls
+              muted
+              controls={false}
               autoPlay
-              className="w-full h-full object-cover"
+              className={`
+    bg-black
+    ${isVertical ? "w-auto h-full mx-auto" : "w-full h-auto"}
+  `}
+              onLoadedMetadata={handleLoadedMetadata}
+              onTimeUpdate={handleTimeUpdate}
             />
+
+            {/* Barre de contrôle */}
+            <div className="p-4 bg-black/70 flex flex-col gap-3">
+              {/* Barre de défilement */}
+              <input
+                type="range"
+                min={0}
+                max={duration}
+                value={currentTime}
+                onChange={handleSeek}
+                className="w-full accent-white"
+              />
+
+              {/* Boutons Play / Pause */}
+              <div className="flex items-center justify-center gap-4">
+                <button
+                  onClick={togglePlay}
+                  className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200"
+                >
+                  {isPlaying ? "Pause" : "Play"}
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       )}

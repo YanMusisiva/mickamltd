@@ -18,10 +18,10 @@ export const tourismData: EcovilleTourismData = {
         </div>
       ),
       cta: {
-        buttonText: "View Project",
-        href: "/projects/residential",
+        buttonText: "Contact Us",
+        href: "/contact",
         price: "N/A",
-        desc: "Explore our residential construction solutions",
+        desc: "Contact us for residential project inquiries",
       },
     },
     {
@@ -35,10 +35,10 @@ export const tourismData: EcovilleTourismData = {
         </div>
       ),
       cta: {
-        buttonText: "View Project",
-        href: "/projects/commercial",
+        buttonText: "Contact Us",
+        href: "/contact",
         price: "N/A",
-        desc: "Discover our commercial and office building projects",
+        desc: "",
       },
     },
     {
@@ -52,8 +52,8 @@ export const tourismData: EcovilleTourismData = {
         </div>
       ),
       cta: {
-        buttonText: "View Project",
-        href: "/projects/infrastructure",
+        buttonText: "Contact Us",
+        href: "/contact",
         price: "N/A",
         desc: "See how we deliver reliable civil engineering solutions",
       },
@@ -69,10 +69,10 @@ export const tourismData: EcovilleTourismData = {
         </div>
       ),
       cta: {
-        buttonText: "View Project",
-        href: "/projects/epc",
+        buttonText: "Contact Us",
+        href: "/contact",
         price: "N/A",
-        desc: "Explore our turnkey EPC solutions",
+        desc: "contact us for design-build",
       },
     },
     {
@@ -86,10 +86,10 @@ export const tourismData: EcovilleTourismData = {
         </div>
       ),
       cta: {
-        buttonText: "View Project",
-        href: "/projects/structural",
+        buttonText: "Contact Us",
+        href: "/contact",
         price: "N/A",
-        desc: "Learn about our structural and architectural expertise",
+        desc: "",
       },
     },
     {
@@ -103,10 +103,10 @@ export const tourismData: EcovilleTourismData = {
         </div>
       ),
       cta: {
-        buttonText: "Learn More",
-        href: "/services/project-management",
+        buttonText: "Contact Us",
+        href: "/contact",
         price: "N/A",
-        desc: "See how we manage projects efficiently",
+        desc: "",
       },
     },
     {
@@ -120,10 +120,10 @@ export const tourismData: EcovilleTourismData = {
         </div>
       ),
       cta: {
-        buttonText: "Discover",
-        href: "/projects/regional",
+        buttonText: "Contact Us",
+        href: "/contact",
         price: "N/A",
-        desc: "Explore our regional project portfolio",
+        desc: "",
       },
     },
   ],

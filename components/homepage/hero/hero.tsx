@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   /* ---------------------- MENU ITEMS ---------------------- */
 
   /* ---------------------- SLIDESHOW ----------------------- */
-  const images = ["/project/building.jpg", "/bg_home2.jpg"];
+  const images = ["/project/management.jpg"];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
       className="pb-4 max-lg:pt-20 max-lg:flex-col flex items-center justify-center"
     >
       {/* ---------------------- LEFT COLUMN ---------------------- */}
-      <div className="h-full w-full md:w-1/2 flex flex-col items-center justify-start px-4 mt-6 lg:mt-12">
+      <div className="h-1/2 w-full md:h-full md:w-1/2 flex flex-col items-center justify-start px-4 mt-6 lg:mt-8 xl:mt-1">
         <div className="relative text-center max-w-xl space-y-6">
           {/* Logo + Name */}
           <div className="flex flex-col items-center gap-3 hero-title">
@@ -94,7 +94,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Always at the bottom */}
-            <div className="text-center space-y-1 pt-3">
+            {/* <div className="text-center space-y-1 pt-3">
               <div className="text-sm text-gray-600">
                 Take a look at our other site
               </div>
@@ -105,19 +105,19 @@ const Hero: React.FC = () => {
               >
                 StandardProperties Ltd
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
       {/* ---------------------- IMAGE PART (UNCHANGED VISUALLY) ---------------------- */}
-      <div className="relative parralelogram w-full lg:w-1/2 h-full aspect-square overflow-hidden mt-4 lg:mt-7">
+      <div className="relative parralelogram w-full h-1/2 lg:w-1/2 lg:h-full aspect-square overflow-hidden mt-4 lg:mt-7 xl:mt-5">
         <div className="absolute inset-0 transition-opacity duration-1000 opacity-100">
           <Image
             key={currentImage}
             src={images[currentImage]}
             alt="image"
-            className="object-cover min-h-svh w-full"
+            className="object-cover h-full w-full"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
             loading="eager"

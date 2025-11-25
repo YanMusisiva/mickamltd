@@ -1,24 +1,23 @@
 "use client";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import Image from "next/image";
 import { useRef } from "react";
 
-export const InsetAnimImage = ({
+export const InsetAnimVideo = ({
   src,
-  alt,
   className,
   index,
 }: {
   src: string;
-  alt: string;
   className?: string;
   index?: number;
 }) => {
-  const imageRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useGSAP(() => {
-    gsap.from(imageRef.current, {
+    if (!videoRef.current) return;
+
+    gsap.from(videoRef.current, {
       scale: 0.6,
       filter: "grayscale(50%)",
       rotateY: index! % 2 === 0 ? 10 : -10,
@@ -26,26 +25,25 @@ export const InsetAnimImage = ({
       duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
-        trigger: imageRef.current,
+        trigger: videoRef.current,
         start: "top 80%",
         end: "bottom 30%",
         toggleActions: "play none none none",
-        // scrub: true,
       },
     });
-  }, [imageRef]);
+  }, [videoRef]);
 
   return (
-    <Image
-      ref={imageRef}
-      src={src}
-      alt={alt}
-      fill
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 45vw"
-      className={className}
-      placeholder="blur"
-      blurDataURL="/svg/placeholder.svg"
-      loading="lazy"
-    />
+    <div className="relative aspect-video overflow-hidden rounded-xl bg-black">
+      <video
+        ref={videoRef}
+        src={src}
+        muted
+        autoPlay
+        loop
+        playsInline
+        className={`w-full h-full object-contain rounded-xl transition-all duration-300 ${className}`}
+      />
+    </div>
   );
 };
