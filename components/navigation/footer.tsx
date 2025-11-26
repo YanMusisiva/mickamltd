@@ -49,19 +49,19 @@ const socialLinks = [
   {
     icon: Facebook,
     label: "Facebook",
-    href: "https://facebook.com/ecoville",
+    href: "https://facebook.com/mickamltd",
     color: "hover:text-blue-600",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com/company/ecoville",
+    href: "https://linkedin.com/company/mickam-ltd",
     color: "hover:text-blue-700",
   },
   {
     icon: Twitter,
     label: "Twitter",
-    href: "https://twitter.com/ecoville",
+    href: "https://twitter.com/mickamltd",
     color: "hover:text-blue-400",
   },
   {

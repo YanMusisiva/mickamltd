@@ -1,33 +1,59 @@
-# EcoVille
+Mickam (U) Ltd – Company Profile Website
 
-Site web d'Écoville imaginé pour le [concours](https://youtu.be/LxfRrcanK2A?si=QOks2GAOcnywLSXZ) de l'[École du web](https://www.ecole-du-web.net/).
+This website presents Mickam (U) Ltd, a Ugandan construction and engineering company operating across Uganda and the East African region.
 
-Écoville est une ville imaginaire qui s'inspire de la forme hexagonale et de ses caractéristiques environnementales. Elle est conçue pour minimiser son impact environnemental tout en favorisant une vie communautaire active et ouverte.
+Tech Stack
 
-## Outils de développement
+Built with:
 
-Pour le développer, j'ai utilisé le framework [Next.js](https://nextjs.org/) (App Router) et [Tailwind CSS](https://tailwindcss.com/) pour le CSS et ses classes utilitaires.
-La librairie [GSAP](https://www.gsap.com) pour les animations et ses super plugins.
-Pour améliorer l'expérience des animations au scroll, j'utilise [Lenis.js](https://lenis.darkroom.engineering/).
-[shadcn](https://ui.shadcn.com/) a été installé mais aucun composant de la librairie n'a été utilisé.
+Next.js (App Router)
 
-Pour le peu de temps que j'avais, commencé le 25/09 pour un rendu le 29/09, j'ai utilisé un composant tout fait pour la comparaison avant/après, [React Compare Slider](https://react-compare-slider.vercel.app/?path=/docs/docs-introduction--docs), seul composant que je n'ai pas créé pour cette landing page.
+Tailwind CSS
 
-Les icônes viennent de [Lucide](https://lucide.dev/) et [Radix UI](https://www.radix-ui.com/docs/primitives/icons/overview).
+GSAP & Lenis.js for animations and smooth scrolling
 
-Polices utilisées : [Paytone One](https://fonts.google.com/specimen/Paytone+One) et [Athiti](https://fonts.google.com/specimen/Athiti).
+Lucide / Radix Icons
 
-Les images ont été entièrement générées par [Midjourney](https://www.midjourney.com/home).
+React Compare Slider for before/after project visuals
 
-La quasi-totalité du contenu textuel est dans le répertoire `content`.
-La totalité des images  sont dans le répertoire `public`.
+Content is stored in content/, and all images are in public/.
 
-## Expérience
+About Mickam (U) Ltd
 
-J'ai beaucoup apprécié ce concours. N'ayant pas eu le temps pour faire un multipage, je me suis concentré sur une seule page, avec un menu de navigation accessible via un bouton situé en haut à droite de la page.
+Incorporated in 2019, Mickam (U) Ltd delivers end-to-end building and civil works for private, corporate, and public clients.
+Our approach combines strong project management, HSE standards, and transparent communication.
 
-Vous pouvez visiter le site ici : [Écoville](https://ecoville-liart.vercel.app/)
+Vision
 
-Bonne visite à tous ! 👋
+To be East Africa’s most trusted partner for safe, sustainable, and high-quality construction.
 
+Mission
 
+To plan, build, and maintain durable structures through best-practice engineering, skilled local teams, innovation, and clear reporting.
+
+Core Values
+
+Safety • Integrity • Quality • Reliability • Innovation • Sustainability • Client focus
+
+Services
+
+Building Construction: Residential, commercial, hospitality, industrial, EPC
+
+Civil Works: Roads, drainage, earthworks, retaining structures, culvert crossings
+
+Project & Cost Management: Planning, BOQs, FIDIC/JB administration, QA/QC, HSE
+
+Technical Support: Structural/architectural reviews, MEP coordination, renovations, maintenance
+
+Procurement & Enabling Services: Materials sourcing, equipment hire, logistics, regulatory support
+
+Regional Coverage
+
+Base: Uganda
+
+Operations: Kenya, Tanzania, Rwanda, South Sudan, DRC
+
+Why Clients Choose Mickam
+
+Proven delivery since 2019 • Strong safety culture • Cost-optimized value engineering
+Local expertise • Regional reach • Single-point accountability
