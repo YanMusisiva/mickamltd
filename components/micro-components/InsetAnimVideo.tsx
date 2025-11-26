@@ -1,49 +1,51 @@
 "use client";
-import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
-import { useRef } from "react";
+import { useState } from "react";
+
+type InsetAnimVideoProps = {
+  src: string;
+  className?: string;
+  index?: number;
+  poster?: string;
+};
 
 export const InsetAnimVideo = ({
   src,
   className,
-  index,
-}: {
-  src: string;
-  className?: string;
-  index?: number;
-}) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useGSAP(() => {
-    if (!videoRef.current) return;
-
-    gsap.from(videoRef.current, {
-      scale: 0.6,
-      filter: "grayscale(50%)",
-      rotateY: index! % 2 === 0 ? 10 : -10,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: videoRef.current,
-        start: "top 80%",
-        end: "bottom 30%",
-        toggleActions: "play none none none",
-      },
-    });
-  }, [videoRef]);
+  poster,
+}: InsetAnimVideoProps) => {
+  const [play, setPlay] = useState(false);
 
   return (
-    <div className="relative aspect-video overflow-hidden rounded-xl bg-black">
-      <video
-        ref={videoRef}
-        src={src}
-        muted
-        autoPlay
-        loop
-        playsInline
-        className={`w-full h-full object-contain rounded-xl transition-all duration-300 ${className}`}
-      />
+    <div
+      className={`relative w-full lg:w-1/2 min-h-[300px] lg:min-h-[400px] aspect-video overflow-hidden rounded-xl bg-black ${className}`}
+    >
+      {!play && (
+        <div
+          className="w-full h-full flex items-center justify-center cursor-pointer relative"
+          onClick={() => setPlay(true)}
+        >
+          {poster && (
+            <img
+              src={poster}
+              alt="Video placeholder"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          )}
+          <div className="absolute w-20 h-20 flex items-center justify-center bg-yellow-600 rounded-full opacity-80 hover:opacity-100 text-white text-3xl">
+            ▶
+          </div>
+        </div>
+      )}
+
+      {play && (
+        <video
+          src={src}
+          muted
+          autoPlay
+          className="w-full h-full object-cover rounded-xl"
+        />
+      )}
     </div>
   );
 };
