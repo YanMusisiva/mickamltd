@@ -17,6 +17,7 @@ export const BlogCuisine: React.FC = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isVertical, setIsVertical] = useState(false);
+  const [play, setPlay] = useState(false);
 
   const handleLoadedMetadata = () => {
     if (!videoRef.current) return;
@@ -122,14 +123,27 @@ export const BlogCuisine: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-8 mb-8 group">
         {/* Lecteur vidéo responsive */}
         <div className="relative aspect-video overflow-hidden rounded-xl bg-black">
-          <video
-            src={ecovilleCulinaryData.highlightedRestaurant.video}
-            muted
-            autoPlay
-            loop
-            playsInline
-            className="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-all duration-300"
-          />
+          {!play && (
+            <div
+              className="w-full h-full flex items-center justify-center cursor-pointer relative"
+              onClick={() => setPlay(true)}
+            >
+              <div className="absolute w-16 h-16 flex items-center justify-center bg-yellow-600 rounded-full opacity-80 hover:opacity-100 text-white text-3xl">
+                ▶
+              </div>
+            </div>
+          )}
+
+          {play && (
+            <video
+              src={ecovilleCulinaryData.highlightedRestaurant.video}
+              muted
+              loop
+              className="w-full h-full object-cover rounded-xl"
+              autoPlay
+              playsInline
+            />
+          )}
         </div>
 
         <div>
