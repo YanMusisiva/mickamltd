@@ -49,19 +49,19 @@ const socialLinks = [
   {
     icon: Facebook,
     label: "Facebook",
-    href: "https://facebook.com/mickamltd",
+    href: "https://www.facebook.com/Mk.E.ug",
     color: "hover:text-blue-600",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com/company/mickam-ltd",
+    href: "https://www.linkedin.com/in/michael-kamate-8129ab1a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     color: "hover:text-blue-700",
   },
   {
     icon: Twitter,
     label: "Twitter",
-    href: "https://twitter.com/mickamltd",
+    href: "https://x.com/ElectricMk?t=as-0ycYU-IAsOWXp9H6roQ&s=09",
     color: "hover:text-blue-400",
   },
   {

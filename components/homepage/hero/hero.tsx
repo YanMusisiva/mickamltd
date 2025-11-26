@@ -80,7 +80,11 @@ const Hero: React.FC = () => {
               {/* Social Icons */}
               <div className="flex items-center justify-center gap-4 text-lg">
                 <div className="p-3 rounded-full bg-gray-100 hover:bg-blue-100 transition cursor-pointer">
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.linkedin.com/in/michael-kamate-8129ab1a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Linkedin className="hover:text-blue-600 transition" />
                   </a>
                 </div>

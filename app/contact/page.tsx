@@ -4,7 +4,13 @@ import React from "react";
 
 import Link from "next/link";
 import { Mail, Phone, Linkedin, MapPin, Clock } from "lucide-react";
-import { FaTiktok, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 const ContactPage: React.FC = () => {
   return (
@@ -123,12 +129,41 @@ const ContactPage: React.FC = () => {
             </Link>
 
             <Link
-              href="https://www.linkedin.com/company/mickam-uganda"
+              href="https://www.linkedin.com/in/michael-kamate-8129ab1a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               className="group flex flex-col items-center justify-center gap-3 p-6 bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-all hover:scale-105 border border-blue-100"
             >
               <Linkedin className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" />
               <span className="font-semibold text-gray-800">LinkedIn</span>
+            </Link>
+            {/* Instagram */}
+            <Link
+              href="https://www.instagram.com/mickam_u_ltd?igsh=YmMxbWtjNTd5MDlz"
+              target="_blank"
+              className="group flex flex-col items-center justify-center gap-3 p-6 bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-all hover:scale-105 border border-blue-100"
+            >
+              <FaInstagram className="w-8 h-8 text-pink-500 group-hover:scale-110 transition-transform" />
+              <span className="font-semibold text-gray-800">Instagram</span>
+            </Link>
+
+            {/* X (Twitter) */}
+            <Link
+              href="https://x.com/ElectricMk?t=as-0ycYU-IAsOWXp9H6roQ&s=09"
+              target="_blank"
+              className="group flex flex-col items-center justify-center gap-3 p-6 bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-all hover:scale-105 border border-blue-100"
+            >
+              <FaTwitter className="w-8 h-8 text-blue-500 group-hover:scale-110 transition-transform" />
+              <span className="font-semibold text-gray-800">X</span>
+            </Link>
+
+            {/* Facebook */}
+            <Link
+              href="https://www.facebook.com/Mk.E.ug"
+              target="_blank"
+              className="group flex flex-col items-center justify-center gap-3 p-6 bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-md hover:shadow-lg transition-all hover:scale-105 border border-blue-100"
+            >
+              <FaFacebook className="w-8 h-8 text-blue-700 group-hover:scale-110 transition-transform" />
+              <span className="font-semibold text-gray-800">Facebook</span>
             </Link>
           </div>
         </div>

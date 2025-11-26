@@ -15,22 +15,21 @@ const LegalPage: React.FC = () => {
       <h2 className="text-3xl font-semibold mt-8 mb-4">Company Details</h2>
       <ul className="list-disc list-inside mb-6">
         <li>
-          <strong>Company Name:</strong> Mickam (U) Ltd
+          <strong>Company Name:</strong> Mickam SMC Ltd
         </li>
         <li>
-          <strong>Address:</strong> Kampala, Uganda (Head Office)
+          <strong>Address:</strong> Tirupati MAZIMA Mall. Kampala, Uganda (Near
+          the American Embassy).
         </li>
+
         <li>
-          <strong>Registration Number:</strong> To be provided
-        </li>
-        <li>
-          <strong>Tax Identification Number (TIN):</strong> To be provided
+          <strong>Tax Identification Number (TIN): 1014977761</strong>
         </li>
         <li>
           <strong>Email:</strong> contact@mickam.com
         </li>
         <li>
-          <strong>Phone:</strong> +256 123 456 789
+          <strong>Phone:</strong> +256 752277320
         </li>
       </ul>
 
@@ -39,8 +38,12 @@ const LegalPage: React.FC = () => {
         Our Terms & Conditions govern the relationship between Mickam (U) Ltd
         and our clients. You can review them by clicking the link below:
       </p>
-      <Link href="/about/terms" className="text-green-700 underline">
-        View Terms & Conditions
+      <Link
+        href="/privacy-policy.pdf"
+        download
+        className="text-green-700 underline"
+      >
+        Download Terms & Conditions
       </Link>
 
       <h2 className="text-3xl font-semibold mt-8 mb-4">Privacy Policy</h2>
@@ -48,8 +51,12 @@ const LegalPage: React.FC = () => {
         We respect your privacy and are committed to protecting your personal
         data. To learn more, please read our Privacy Policy:
       </p>
-      <Link href="/about/privacy" className="text-green-700 underline">
-        View Privacy Policy
+      <Link
+        href="/privacy-policy.pdf"
+        download
+        className="text-green-700 underline"
+      >
+        Download Privacy Policy
       </Link>
 
       <h2 className="text-3xl font-semibold mt-8 mb-4">Contact</h2>
@@ -61,7 +68,7 @@ const LegalPage: React.FC = () => {
         <strong>Email:</strong> contact@mickam.com
       </p>
       <p className="text-lg text-gray-600 mb-4">
-        <strong>Phone:</strong> +256 123 456 789
+        <strong>Phone:</strong> +256 752277320
       </p>
     </section>
   );
