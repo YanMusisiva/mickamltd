@@ -1,4 +1,4 @@
-import { MapPin, Binoculars, Bike, Wifi, Leaf } from "lucide-react";
+import {  Building2, Globe2, ClipboardList, Cog, Construction, Home, Route } from "lucide-react";
 import { EcovilleTourismData } from "./types/contentType";
 
 export const tourismData: EcovilleTourismData = {
@@ -12,11 +12,13 @@ export const tourismData: EcovilleTourismData = {
       description:
         "Modern residential estates and villas delivered with high-quality finishes and sustainable design.",
       image: "/tourism/residential-estates.webp",
-      icon: (
-        <div className="border rounded-3xl p-4 w-fit mx-auto">
-          <MapPin strokeOpacity={0.8} size={40} className="text-white" />
-        </div>
-      ),
+   icon: (
+  <div className="border rounded-3xl p-4 w-fit mx-auto">
+    <Home strokeOpacity={0.8} size={40} className="text-white" />
+  </div>
+),
+
+
       cta: {
         buttonText: "Contact Us",
         href: "/contact",
@@ -31,10 +33,11 @@ export const tourismData: EcovilleTourismData = {
         "High-standard office spaces, retail, and hospitality buildings designed for efficiency and aesthetics.",
       image: "/tourism/commercial-buildings.webp",
       icon: (
-        <div className="border rounded-3xl p-4 w-fit mx-auto">
-          <Binoculars strokeOpacity={0.8} size={40} className="text-white" />
-        </div>
-      ),
+  <div className="border rounded-3xl p-4 w-fit mx-auto">
+    <Building2 strokeOpacity={0.8} size={40} className="text-white" />
+  </div>
+),
+
       cta: {
         buttonText: "Contact Us",
         href: "/contact",
@@ -49,10 +52,12 @@ export const tourismData: EcovilleTourismData = {
         "Roads, drainage systems, pavements, retaining structures, and minor bridges built with durability and safety in mind.",
       image: "/tourism/civil-infrastructure.webp",
       icon: (
-        <div className="border rounded-3xl p-4 w-fit mx-auto">
-          <Bike strokeOpacity={0.8} size={40} className="text-white" />
-        </div>
-      ),
+  <div className="border rounded-3xl p-4 w-fit mx-auto">
+    <Route strokeOpacity={0.8} size={40} className="text-white" />
+  </div>
+),
+
+
       cta: {
         buttonText: "Contact Us",
         href: "/contact",
@@ -66,11 +71,12 @@ export const tourismData: EcovilleTourismData = {
       description:
         "End-to-end Design-Build projects where we handle engineering, procurement, and construction under one contract.",
       image: "/tourism/epc-projects.webp",
-      icon: (
-        <div className="border rounded-3xl p-4 w-fit mx-auto">
-          <Wifi strokeOpacity={0.8} size={40} className="text-white" />
-        </div>
-      ),
+     icon: (
+  <div className="border rounded-3xl p-4 w-fit mx-auto">
+    <Construction strokeOpacity={0.8} size={40} className="text-white" />
+  </div>
+),
+
       cta: {
         buttonText: "Contact Us",
         href: "/contact",
@@ -85,10 +91,11 @@ export const tourismData: EcovilleTourismData = {
         "Coordination of MEP trades, structural detailing, renovations, and adaptive reuse for sustainable buildings.",
       image: "/tourism/structural-support.webp",
       icon: (
-        <div className="border rounded-3xl p-4 w-fit mx-auto">
-          <Leaf strokeOpacity={0.8} size={40} className="text-white" />
-        </div>
-      ),
+  <div className="border rounded-3xl p-4 w-fit mx-auto">
+    <Cog strokeOpacity={0.8} size={40} className="text-white" />
+  </div>
+),
+
       cta: {
         buttonText: "Contact Us",
         href: "/contact",
@@ -103,10 +110,11 @@ export const tourismData: EcovilleTourismData = {
         "Professional planning, scheduling, cost control, and QA/QC management to ensure projects meet deadlines and budgets.",
       image: "/tourism/project-management.webp",
       icon: (
-        <div className="border rounded-3xl p-4 w-fit mx-auto">
-          <MapPin strokeOpacity={0.8} size={40} className="text-white" />
-        </div>
-      ),
+  <div className="border rounded-3xl p-4 w-fit mx-auto">
+    <ClipboardList strokeOpacity={0.8} size={40} className="text-white" />
+  </div>
+),
+
       cta: {
         buttonText: "Contact Us",
         href: "/contact",
@@ -121,10 +129,11 @@ export const tourismData: EcovilleTourismData = {
         "Our operations span Uganda and East Africa, showcasing projects in Kenya, Tanzania, Rwanda, South Sudan, and the DRC.",
       image: "/tourism/regional-projects.webp",
       icon: (
-        <div className="border rounded-3xl p-4 w-fit mx-auto">
-          <Binoculars strokeOpacity={0.8} size={40} className="text-white" />
-        </div>
-      ),
+  <div className="border rounded-3xl p-4 w-fit mx-auto">
+    <Globe2 strokeOpacity={0.8} size={40} className="text-white" />
+  </div>
+),
+
       cta: {
         buttonText: "Contact Us",
         href: "/contact",

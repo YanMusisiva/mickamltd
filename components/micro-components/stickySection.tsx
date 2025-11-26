@@ -34,7 +34,7 @@ export const StickySection = ({ features }: StickySectionProps) => {
               </p>
 
               {feature.cta && (
-                <p className="mt-3 text-md text-green-300 font-bold italic pt-2 max-w-2xl px-2 text-center">
+                <p className="mt-3 text-md text-yellow-600 font-bold italic pt-2 max-w-2xl px-2 text-center">
                   <Quote className="inline-block w-4 h-4 mr-2 opacity-50 -scale-x-100 -translate-y-2" />
                   {feature.cta.desc}
                   <Quote className="inline-block size-3 ml-2 opacity-50 translate-y-2" />
@@ -45,7 +45,7 @@ export const StickySection = ({ features }: StickySectionProps) => {
             {feature.cta && (
               <Link
                 href={feature.cta.href}
-                className="text-lg hover:scale-105 active:scale-95 transition-all text-white font-bold bg-green-700 hover:bg-green-600 py-2 px-3 rounded-xl flex items-center gap-2"
+                className="text-lg hover:scale-105 active:scale-95 transition-all text-white font-bold bg-yellow-700 hover:bg-yellow-600 py-2 px-3 rounded-xl flex items-center gap-2"
               >
                 {feature.cta.buttonText}
                 <ArrowRight className="inline-block w-0 group-hover:w-5 transition-all" />
