@@ -22,6 +22,12 @@ export const FirstCol = () => {
             <BoldText content={whyEcoville.content} />
           </ContentBorder>
         </div>
+        <a
+          href="/contact"
+          className="inline-block mt-3 px-8 py-3 w-fit rounded-full bg-black text-white font-semibold shadow-md hover:bg-gray-800 hover:shadow-lg transition-all duration-200"
+        >
+          Get a quote
+        </a>
       </div>
     </div>
   );

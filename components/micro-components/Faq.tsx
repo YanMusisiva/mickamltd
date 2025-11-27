@@ -71,6 +71,12 @@ const FAQItem: React.FC<{
       </button>
       <div ref={answerRef} className="overflow-hidden" style={{ height: 0 }}>
         <p className="pt-2 pb-4 text-gray-600">{item.answer}</p>
+        <a
+          href="/contact"
+          className="inline-block mt-3 px-8 py-3 w-fit rounded-full bg-black text-white font-semibold shadow-md hover:bg-gray-800 hover:shadow-lg transition-all duration-200"
+        >
+          Get a quote
+        </a>
       </div>
     </div>
   );

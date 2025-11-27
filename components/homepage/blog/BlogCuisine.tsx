@@ -118,6 +118,12 @@ export const BlogCuisine: React.FC = () => {
         <p className="text-lg text-gray-600 mb-4">
           {ecovilleCulinaryData.content}
         </p>
+        <a
+          href="/contact"
+          className="inline-block px-8 py-3 rounded-full bg-black text-white font-semibold shadow-md hover:bg-gray-800 hover:shadow-lg transition-all duration-200"
+        >
+          Get a quote
+        </a>
       </div>
       <div className="grid md:grid-cols-2 gap-8 mb-8 group">
         {/* Lecteur vidéo responsive */}
@@ -142,6 +148,12 @@ export const BlogCuisine: React.FC = () => {
           <p className="text-gray-600 mb-4">
             {ecovilleCulinaryData.highlightedRestaurant.description}
           </p>
+          <a
+            href="/contact"
+            className="inline-block px-8 py-3 rounded-full bg-black text-white font-semibold shadow-md hover:bg-gray-800 hover:shadow-lg transition-all duration-200"
+          >
+            Get a quote
+          </a>
         </div>
       </div>
 

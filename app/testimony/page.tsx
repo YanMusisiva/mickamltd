@@ -52,7 +52,7 @@ const BlogCuisine: React.FC = () => {
 
                 {/* Content */}
                 <div className={index % 2 === 1 ? "md:order-1" : ""}>
-                  <span className="text-sm text-green-600 font-semibold mb-2 block">
+                  <span className="text-sm text-yellow-600 font-semibold mb-2 block">
                     {index === 0 ? "Featured Project" : "PROJECT"}
                   </span>
                   <h2 className="text-3xl font-bold mb-2">
@@ -62,11 +62,11 @@ const BlogCuisine: React.FC = () => {
                     {article?.description ?? ""}
                   </p>
                   <Link
-                    href="/#cuisine"
-                    className="text-green-700 group relative gap-2 w-fit flex items-center pb-2"
+                    href="/contact"
+                    className="text-black group relative gap-2 w-fit flex items-center pb-2"
                   >
                     <HoverLinkEffect />
-                    LEARN MORE <ArrowRight className="ml-2 h-4 w-4" />
+                    CONTACT US <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </div>
               </div>
