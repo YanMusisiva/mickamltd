@@ -2,7 +2,7 @@ import { BoldText } from "@/components/micro-components/BoldText";
 import { ContentBorder } from "@/components/micro-components/ContentBorder";
 import companyData from "@/content/companyData";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Company() {
   const { title, content, keyPoints } = companyData;
