@@ -17,7 +17,7 @@ export const ecovilleCulinaryData: EcovilleCulinaryData = {
       description:
         "Mickam (U) Ltd is currently building a new residential estate in Uganda, showcasing our expertise in delivering high-quality, sustainable housing solutions with a focus on safety and client satisfaction.",
       image: "/thumbnails/commercial-buildings.webp",
-      video: "/videos/new-project.mp4",
+      video: "/videos/new-project6.mp4",
     },
     {
       title: "Building new project in Uganda",
@@ -45,7 +45,7 @@ export const ecovilleCulinaryData: EcovilleCulinaryData = {
       description:
         "Mickam (U) Ltd is currently building a new residential estate in Uganda, showcasing our expertise in delivering high-quality, sustainable housing solutions with a focus on safety and client satisfaction.",
       image: "/thumbnails/commercial-buildings.webp",
-      video: "/videos/new-project6.mp4",
+      video: "/videos/new-project.mp4",
     },
     {
       title: "Commercial & Office Buildings",
