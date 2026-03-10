@@ -13,6 +13,41 @@ export const ecovilleCulinaryData: EcovilleCulinaryData = {
   },
   articles: [
     {
+      title: "Building new project in Uganda",
+      description:
+        "Mickam (U) Ltd is currently building a new residential estate in Uganda, showcasing our expertise in delivering high-quality, sustainable housing solutions with a focus on safety and client satisfaction.",
+      image: "/thumbnails/commercial-buildings.webp",
+      video: "/videos/new-project.mp4",
+    },
+    {
+      title: "Building new project in Uganda",
+      description:
+        "Mickam (U) Ltd is currently building a new residential estate in Uganda, showcasing our expertise in delivering high-quality, sustainable housing solutions with a focus on safety and client satisfaction.",
+      image: "/thumbnails/commercial-buildings.webp",
+      video: "/videos/new-project 2.mp4",
+    },
+    {
+      title: "Building new project in Uganda",
+      description:
+        "Mickam (U) Ltd is currently building a new residential estate in Uganda, showcasing our expertise in delivering high-quality, sustainable housing solutions with a focus on safety and client satisfaction.",
+      image: "/thumbnails/commercial-buildings.webp",
+      video: "/videos/new-project4.mp4",
+    },
+    {
+      title: "Building new project in Uganda",
+      description:
+        "Mickam (U) Ltd is currently building a new residential estate in Uganda, showcasing our expertise in delivering high-quality, sustainable housing solutions with a focus on safety and client satisfaction.",
+      image: "/thumbnails/commercial-buildings.webp",
+      video: "/videos/new-project5.mp4",
+    },
+    {
+      title: "Building new project in Uganda",
+      description:
+        "Mickam (U) Ltd is currently building a new residential estate in Uganda, showcasing our expertise in delivering high-quality, sustainable housing solutions with a focus on safety and client satisfaction.",
+      image: "/thumbnails/commercial-buildings.webp",
+      video: "/videos/new-project6.mp4",
+    },
+    {
       title: "Commercial & Office Buildings",
       description:
         "High-quality office spaces, retail, and hospitality projects delivered with attention to detail, safety, and on-time completion.",

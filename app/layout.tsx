@@ -9,7 +9,7 @@ const paytoneOne = Paytone_One({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-paytone-one",
-  preload: true,
+  preload: true,  
 });
 
 const athiti = Athiti({
