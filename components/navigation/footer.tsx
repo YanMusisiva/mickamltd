@@ -214,7 +214,7 @@ export const Footer = () => {
             <p className="text-xs mt-1">
               Built with care by{" "}
               <a
-                href="https://www.instagram.com/johnasikire?igsh=MWJsbjFiaXIzZDVlaA=="
+                href="https://www.linkedin.com/in/john-asikire"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-600 hover:text-yellow-800 transition-colors"
