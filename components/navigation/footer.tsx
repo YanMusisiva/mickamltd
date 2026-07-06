@@ -212,7 +212,15 @@ export const Footer = () => {
           <div className="text-center md:text-right text-sm text-gray-500">
             <p>© {new Date().getFullYear()} Mickam Ltd. All rights reserved.</p>
             <p className="text-xs mt-1">
-              Built with care for a sustainable future
+              Built with care by{" "}
+              <a
+                href="https://www.instagram.com/johnasikire?igsh=MWJsbjFiaXIzZDVlaA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow-600 hover:text-yellow-800 transition-colors"
+              >
+                John Asikire
+              </a>
             </p>
           </div>
         </div>
